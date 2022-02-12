@@ -84,7 +84,7 @@ header nav .nav-container .nav-row .right-nav .nav-links li a {
 header nav .nav-container .nav-row .right-nav .nav-links li.nav-login-li a {
   background-color: #e41a1a;
   border-radius: 5px;
-  padding: 7.5px 25px;
+  padding: 10px 30px;
 }
 
 header nav .nav-container .nav-row .right-nav .nav-links li:not(:last-child) {
