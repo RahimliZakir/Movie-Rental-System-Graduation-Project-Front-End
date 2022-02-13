@@ -7,6 +7,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="assets/sources/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/sources/css/all.min.css" />
+    <link rel="stylesheet" href="assets/sources/css/icons.bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/sources/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <link
       rel="shortcut icon"
@@ -16,28 +18,46 @@
   </head>
   <body>
     <!-- header start -->
-    <header>
-      <nav>
-        <div class="container nav-container">
-          <div class="row nav-row">
-            <div class="col-3 left-nav">
-              <a href="#"> You <span>video.</span> </a>
-            </div>
-            <div class="col-9 right-nav">
-              <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Shows</a></li>
-                <li><a href="#">Coming Soon</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li class="nav-login-li"><a href="#">Login</a></li>
-                <i class="fa-solid fa-cart-shopping"></i>
+    <header></header>
+    <!-- header end -->
+    <!-- films swiper start -->
+    <section id="films-swiper">
+      <div class="films-swiper-item">
+        <div class="container films-swiper-container">
+          <div class="row films-swiper-row">
+            <div class="col-12 films-swiper-col">
+              <span class="badge films-swiper-badge text-dark">Premium</span>
+              <h2>Deadpool: No Good Deed</h2>
+              <div class="casts">
+                <h6 class="casts-heading">Cast:</h6>
+                <p class="casts-actor-actress">Ryan Reynolds (Deadpool)</p>
+                <p class="casts-actor-actress">Morena Baccarin (Vanessa)</p>
+              </div>
+              <ul class="casts-film-types">
+                <li class="film-type">
+                  <i class="bi bi-badge-hd-fill"></i>
+                </li>
+                <li class="film-type"><strong>Rated:</strong>8.5</li>
+                <li class="film-type">
+                  <strong>Genre:</strong>Horror,Comedy,Action,Sci-fi.
+                </li>
               </ul>
+              <div class="film-description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- header end -->
+      </div>
+    </section>
+    <!-- films swiper end -->
+
+    <script src="assets/sources/js/jquery.min.js"></script>
+    <script src="assets/sources/js/bootstrap.min.js"></script>
+    <script src="assets/sources/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

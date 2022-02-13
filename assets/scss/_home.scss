@@ -1,6 +1,9 @@
 header {
   nav {
-    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
     padding: 2% 0;
     border-bottom: 1px solid white;
     .nav-container {
@@ -21,7 +24,7 @@ header {
         }
         .right-nav {
           .nav-links {
-            @include Flexing(center);
+            @include Flexing(center, flex-end);
 
             li {
               a {
@@ -40,8 +43,63 @@ header {
             }
 
             li:not(:last-child) {
-              margin-right: 2.5%;
+              margin-right: 5%;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+#films-swiper {
+  .films-swiper-item {
+    background-image: url("../images/home/banner-2.jpg");
+    background-size: cover;
+    padding-top: 15%;
+    .films-swiper-container {
+      .films-swiper-row {
+        .films-swiper-col {
+          .films-swiper-badge {
+            background-color: #ffd230;
+            padding: 0.5% 1%;
+          }
+
+          h2 {
+            color: white;
+            font-family: "Baloo";
+            font-weight: 600;
+            font-size: 4.8rem;
+          }
+
+          .casts {
+            .casts-heading {
+              font-weight: 600;
+              color: white;
+              font-family: "Baloo";
+            }
+
+            .casts-actor-actress {
+              color: white;
+              font-size: 0.8rem;
+              font-family: "RobotoSerif";
+            }
+          }
+
+          .casts-film-types {
+            @include Flexing;
+
+            li {
+              color: white;
+            }
+
+            li:not(:last-child) {
+              margin-right: 1.5%;
+            }
+          }
+
+          .film-description {
+            color: white;
           }
         }
       }

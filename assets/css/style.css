@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "RobotoSerif";
+  src: url("../fonts/RobotoSerif/static/RobotoSerif/RobotoSerif-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "SourceSansPro";
   src: url("../fonts/SourceSansPro/SourceSansPro-Regular.ttf");
   font-weight: 400;
@@ -43,7 +50,10 @@ a {
 }
 
 header nav {
-  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
   padding: 2% 0;
   border-bottom: 1px solid white;
 }
@@ -73,6 +83,9 @@ header nav .nav-container .nav-row .right-nav .nav-links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 header nav .nav-container .nav-row .right-nav .nav-links li a {
@@ -88,6 +101,54 @@ header nav .nav-container .nav-row .right-nav .nav-links li.nav-login-li a {
 }
 
 header nav .nav-container .nav-row .right-nav .nav-links li:not(:last-child) {
-  margin-right: 2.5%;
+  margin-right: 5%;
+}
+
+#films-swiper .films-swiper-item {
+  background-image: url("../images/home/banner-2.jpg");
+  background-size: cover;
+  padding-top: 15%;
+}
+
+#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .films-swiper-badge {
+  background-color: #ffd230;
+  padding: 0.5% 1%;
+}
+
+#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col h2 {
+  color: white;
+  font-family: "Baloo";
+  font-weight: 600;
+  font-size: 4.8rem;
+}
+
+#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts .casts-heading {
+  font-weight: 600;
+  color: white;
+  font-family: "Baloo";
+}
+
+#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts .casts-actor-actress {
+  color: white;
+  font-size: 0.8rem;
+  font-family: "RobotoSerif";
+}
+
+#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts-film-types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts-film-types li {
+  color: white;
+}
+
+#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts-film-types li:not(:last-child) {
+  margin-right: 1.5%;
+}
+
+#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-description {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
