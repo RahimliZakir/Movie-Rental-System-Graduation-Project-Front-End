@@ -1,107 +1,107 @@
-header {
-  nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    padding: 2% 0;
-    border-bottom: 1px solid white;
-    .nav-container {
-      .nav-row {
-        align-items: center;
-        .left-nav {
-          a {
-            display: inline-block;
-            color: white;
-            font-family: "Baloo";
-            font-size: 1.6rem;
-            font-weight: 600;
+#films-swiper {
+  .films-swiper-carousel {
+    .swiper-wrapper {
+      .films-swiper-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15% 0;
+        .films-swiper-container {
+          .films-swiper-row {
+            .films-swiper-col {
+              .films-swiper-badge {
+                background-color: #ffd230;
+                padding: 0.5% 1%;
+              }
 
-            span {
-              color: $this-red;
-            }
-          }
-        }
-        .right-nav {
-          .nav-links {
-            @include Flexing(center, flex-end);
-
-            li {
-              a {
-                display: inline-block;
+              h2 {
                 color: white;
+                font-family: "Baloo";
                 font-weight: 600;
+                font-size: 4.8rem;
               }
-            }
 
-            li.nav-login-li {
-              a {
-                background-color: $this-red;
-                border-radius: 5px;
-                padding: 10px 30px;
+              .casts {
+                .casts-heading {
+                  font-weight: 600;
+                  color: white;
+                  font-family: "Baloo";
+                }
+
+                .casts-actor-actress {
+                  color: white;
+                  font-size: 0.8rem;
+                  font-family: "RobotoSerif";
+                }
               }
-            }
 
-            li:not(:last-child) {
-              margin-right: 5%;
+              .film-types {
+                @include Flexing(center);
+
+                .film-type {
+                  color: white;
+
+                  strong {
+                    margin-right: 2.5px;
+                  }
+
+                  i {
+                    display: inline-block;
+                    font-size: 1.2rem;
+                  }
+                }
+
+                .film-type:not(:last-child) {
+                  margin-right: 0.5%;
+                }
+              }
+
+              .film-description {
+                color: white;
+                font-family: "Baloo";
+                padding-right: 22.5%;
+              }
+
+              .films-swiper-buttons-box {
+                @include Flexing(center);
+                margin-top: 1.75%;
+
+                a {
+                  display: inline-block;
+                  font-family: "Baloo";
+                  border-radius: 5px;
+                  color: white;
+                }
+
+                .watch-btn {
+                  background-color: $this-red;
+                  padding: 10px 30px;
+                }
+
+                .watchlist-btn {
+                  border: 1px solid white;
+                  padding: 3px 20px;
+                  font-size: 1.2rem;
+                  margin-left: 2%;
+                  transition: 0.2s;
+
+                  &:hover {
+                    color: black;
+                    background-color: white;
+                  }
+                }
+              }
             }
           }
         }
       }
     }
-  }
-}
+    .swiper-pagination {
+      span {
+        background-color: #b9b4b4;
+      }
 
-#films-swiper {
-  .films-swiper-item {
-    background-image: url("../images/home/banner-2.jpg");
-    background-size: cover;
-    padding-top: 15%;
-    .films-swiper-container {
-      .films-swiper-row {
-        .films-swiper-col {
-          .films-swiper-badge {
-            background-color: #ffd230;
-            padding: 0.5% 1%;
-          }
-
-          h2 {
-            color: white;
-            font-family: "Baloo";
-            font-weight: 600;
-            font-size: 4.8rem;
-          }
-
-          .casts {
-            .casts-heading {
-              font-weight: 600;
-              color: white;
-              font-family: "Baloo";
-            }
-
-            .casts-actor-actress {
-              color: white;
-              font-size: 0.8rem;
-              font-family: "RobotoSerif";
-            }
-          }
-
-          .casts-film-types {
-            @include Flexing;
-
-            li {
-              color: white;
-            }
-
-            li:not(:last-child) {
-              margin-right: 1.5%;
-            }
-          }
-
-          .film-description {
-            color: white;
-          }
-        }
+      span.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+        background-color: $this-red;
       }
     }
   }

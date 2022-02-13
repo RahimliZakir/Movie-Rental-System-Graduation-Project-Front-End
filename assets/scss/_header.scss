@@ -1,0 +1,54 @@
+header {
+  nav {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 2% 0;
+    border-bottom: 1px solid white;
+    .nav-container {
+      .nav-row {
+        align-items: center;
+        .left-nav {
+          a {
+            display: inline-block;
+            color: white;
+            font-family: "Baloo";
+            font-size: 1.6rem;
+            font-weight: 600;
+
+            span {
+              color: $this-red;
+            }
+          }
+        }
+        .right-nav {
+          .nav-links {
+            @include Flexing(center, flex-end);
+
+            li {
+              a {
+                display: inline-block;
+                color: white;
+                font-weight: 600;
+              }
+            }
+
+            li.nav-login-li {
+              a {
+                background-color: $this-red;
+                border-radius: 5px;
+                padding: 10px 30px;
+              }
+            }
+
+            li:not(:last-child) {
+              margin-right: 5%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

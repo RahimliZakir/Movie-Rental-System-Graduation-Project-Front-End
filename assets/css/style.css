@@ -50,7 +50,8 @@ a {
 }
 
 header nav {
-  position: fixed;
+  position: absolute;
+  z-index: 100;
   left: 0;
   top: 0;
   right: 0;
@@ -104,51 +105,109 @@ header nav .nav-container .nav-row .right-nav .nav-links li:not(:last-child) {
   margin-right: 5%;
 }
 
-#films-swiper .films-swiper-item {
-  background-image: url("../images/home/banner-2.jpg");
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item {
+  background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 15%;
+  padding: 15% 0;
 }
 
-#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .films-swiper-badge {
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .films-swiper-badge {
   background-color: #ffd230;
   padding: 0.5% 1%;
 }
 
-#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col h2 {
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col h2 {
   color: white;
   font-family: "Baloo";
   font-weight: 600;
   font-size: 4.8rem;
 }
 
-#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts .casts-heading {
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts .casts-heading {
   font-weight: 600;
   color: white;
   font-family: "Baloo";
 }
 
-#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts .casts-actor-actress {
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts .casts-actor-actress {
   color: white;
   font-size: 0.8rem;
   font-family: "RobotoSerif";
 }
 
-#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts-film-types {
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-types {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts-film-types li {
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-types .film-type {
   color: white;
 }
 
-#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts-film-types li:not(:last-child) {
-  margin-right: 1.5%;
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-types .film-type strong {
+  margin-right: 2.5px;
 }
 
-#films-swiper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-description {
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-types .film-type i {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-types .film-type:not(:last-child) {
+  margin-right: 0.5%;
+}
+
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-description {
   color: white;
+  font-family: "Baloo";
+  padding-right: 22.5%;
+}
+
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .films-swiper-buttons-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.75%;
+}
+
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .films-swiper-buttons-box a {
+  display: inline-block;
+  font-family: "Baloo";
+  border-radius: 5px;
+  color: white;
+}
+
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .films-swiper-buttons-box .watch-btn {
+  background-color: #e41a1a;
+  padding: 10px 30px;
+}
+
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .films-swiper-buttons-box .watchlist-btn {
+  border: 1px solid white;
+  padding: 3px 20px;
+  font-size: 1.2rem;
+  margin-left: 2%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .films-swiper-buttons-box .watchlist-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+#films-swiper .films-swiper-carousel .swiper-pagination span {
+  background-color: #b9b4b4;
+}
+
+#films-swiper .films-swiper-carousel .swiper-pagination span.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+  background-color: #e41a1a;
 }
 /*# sourceMappingURL=style.css.map */
