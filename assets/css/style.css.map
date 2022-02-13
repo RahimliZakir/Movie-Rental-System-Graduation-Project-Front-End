@@ -8,7 +8,8 @@
         "../scss/_flexmixin.scss",
         "../scss/_header.scss",
         "../scss/_footer.scss",
-        "../scss/_home.scss"
+        "../scss/_home.scss",
+        "../scss/_faq.scss"
     ],
     "names": [],
     "file": "style.css"
