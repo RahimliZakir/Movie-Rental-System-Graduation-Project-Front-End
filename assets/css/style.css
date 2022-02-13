@@ -287,4 +287,204 @@ header nav .nav-container .nav-row .right-nav .nav-links li:not(:last-child) {
   bottom: 5%;
   font-weight: 600;
 }
+
+#top-categories .top-categories-container .top-categories-row .top-categories-right-side .top-categories-cards-row .top-categories-cards-col:nth-child(even) {
+  position: relative;
+  top: 17.5px;
+}
+
+#latest-movies {
+  padding: 3.5% 0;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-left-heading-side h2 {
+  font-family: "RobotoBold";
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-right-view-all-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-right-view-all-side a {
+  display: inline-block;
+  color: white;
+  background-color: #e41a1a;
+  border-radius: 5px;
+  padding: 4px 9px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-right-view-all-side a:hover {
+  background-color: #c82333;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side {
+  margin-top: 3.5%;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card {
+  border-radius: 0;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div {
+  position: relative;
+  width: 100%;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div .latest-movies-img-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div .latest-movies-img-box .img-box-top {
+  padding: 3.5% 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div .latest-movies-img-box .img-box-top .latest-movies-badge {
+  background-color: #ffd230;
+  padding: 1.5% 2.5%;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div .latest-movies-img-box .img-box-top p {
+  color: white;
+  font-family: "Baloo";
+  font-size: 0.8rem;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div .latest-movies-img-box .img-box-bottom {
+  padding: 0 4% 3.5%;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div .latest-movies-img-box .img-box-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div .latest-movies-img-box .img-box-bottom ul li a {
+  display: inline-block;
+  color: white;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div .latest-movies-img-box .img-box-bottom ul li:not(:last-child) {
+  margin-right: 3.5%;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .img-div:hover img {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .card-body {
+  background-color: #f9fbfd;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .card-body .card-body-about-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .card-body .card-body-about-side a {
+  display: inline-block;
+  font-weight: 600;
+  color: #8f8f8f;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .card-body .card-body-about-side a:hover {
+  color: #e41a1a;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .card-body .card-body-about-side p {
+  font-family: "Baloo";
+  color: #e41a1a;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .card-body .latest-movies-tags-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .card-body .latest-movies-tags-ul li a {
+  display: inline-block;
+  color: black;
+  font-family: "Baloo";
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .owl-dots {
+  margin-top: 2.5%;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .owl-dots .owl-dot.active span {
+  background: #e41a1a;
+}
 /*# sourceMappingURL=style.css.map */

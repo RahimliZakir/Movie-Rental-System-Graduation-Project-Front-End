@@ -18,4 +18,19 @@ $(document).ready(function () {
       `linear-gradient(to top, #1e2129, transparent), url(assets/images/home/${bgThumb})`
     );
   });
+
+  $(".latest-movies-carousel").owlCarousel({
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
 });
