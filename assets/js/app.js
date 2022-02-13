@@ -11,11 +11,11 @@ $(document).ready(function () {
   let filmsSwiperItem = $(".films-swiper-item");
 
   $.each(filmsSwiperItem, (index, item) => {
-    let bgThumb = $(item).attr("bg-thumb");
+    let bgThumbFilmsSwiper = $(item).attr("bg-thumb");
 
     $(item).css(
       "background-image",
-      `linear-gradient(to top, #1e2129, transparent), url(assets/images/home/${bgThumb})`
+      `linear-gradient(to top, #1e2129, transparent), url(${bgThumbFilmsSwiper})`
     );
   });
 
@@ -35,6 +35,24 @@ $(document).ready(function () {
   });
 
   $(".new-trailer-play-btn").magnificPopup({
+    type: "iframe",
+  });
+
+  let recentMoviesBtns = $(".recent-movies-right-side>button");
+
+  $(recentMoviesBtns).on("click", function () {
+    $(recentMoviesBtns).removeClass("active");
+    $(this).addClass("active");
+  });
+
+  let selectedMovieSection = $("#selected-movie");
+  let bgThumbSelectedMovie = $(selectedMovieSection).attr("bg-thumb");
+  $(selectedMovieSection).css(
+    "background-image",
+    `url(${bgThumbSelectedMovie})`
+  );
+
+  $(".selected-movie-play-btn").magnificPopup({
     type: "iframe",
   });
 });

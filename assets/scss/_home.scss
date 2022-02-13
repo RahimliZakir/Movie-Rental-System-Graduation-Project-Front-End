@@ -578,6 +578,7 @@
 
 #trailer {
   padding: 4% 0;
+  background-color: #e2e2e2;
 
   .trailer-container {
     .trailer-row {
@@ -659,6 +660,281 @@
             .card-body-description {
               color: #7b7b7b;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+#recent-movies {
+  padding: 3.5% 0;
+
+  .recent-movies-container {
+    .recent-movies-row {
+      align-items: center;
+
+      .recent-movies-left-side {
+        h2 {
+          font-family: "RobotoBold";
+          font-size: 2.4rem;
+        }
+      }
+
+      .recent-movies-right-side {
+        @include Flexing(center, flex-end);
+
+        button {
+          border: none;
+          background-color: transparent;
+          color: #8f8f8f;
+          font-size: 0.9rem;
+          border-radius: 5px;
+          padding: 10px 20px;
+          transition: 0.2s;
+
+          &:hover {
+            color: $this-red;
+          }
+
+          &.active {
+            background-color: $this-red;
+            color: white;
+          }
+        }
+
+        button:not(:last-child) {
+          margin-right: 1%;
+        }
+      }
+
+      .recent-movies-cards-col {
+        margin-top: 3.5%;
+
+        .card {
+          background-color: transparent;
+          border: none;
+          border-radius: 0;
+
+          .img-div {
+            position: relative;
+            width: 100%;
+
+            .latest-tv-show-img-box {
+              position: absolute;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              @include Flexing(null, space-between, column);
+
+              .img-box-top {
+                padding: 3.5% 4% 0;
+                @include Flexing(center, space-between);
+
+                .latest-tv-show-badge {
+                  background-color: #ffd230;
+                  padding: 1.5% 2.5%;
+                }
+
+                p {
+                  color: white;
+                  font-family: "Baloo";
+                  font-size: 0.8rem;
+                }
+              }
+
+              .img-box-bottom {
+                padding: 0 4% 3.5%;
+
+                ul {
+                  @include Flexing(center);
+
+                  li {
+                    a {
+                      display: inline-block;
+                      color: white;
+                    }
+                  }
+
+                  li:not(:last-child) {
+                    margin-right: 3.5%;
+                  }
+                }
+              }
+            }
+
+            img {
+              width: 100%;
+              height: 300px;
+              object-fit: cover;
+              border-radius: 0;
+              filter: brightness(0.5);
+              transition: 0.3s;
+            }
+
+            &:hover {
+              img {
+                filter: brightness(1);
+              }
+            }
+          }
+          .card-body {
+            padding-left: 0;
+            padding-right: 0;
+
+            .card-body-about-side {
+              @include Flexing(center, space-between);
+
+              .card-bottom-left {
+                display: inline-block;
+                font-weight: 600;
+                color: black;
+              }
+
+              .card-bottom-right {
+                font-size: 0.9rem;
+                color: #dadada;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#selected-movie {
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5% 0;
+
+  .selected-movie-container {
+    .selected-movie-row {
+      align-items: center;
+
+      .selected-movie-left-side {
+        h2 {
+          color: white;
+          font-family: "Baloo";
+          font-weight: 600;
+          font-size: 3.5rem;
+        }
+
+        .selected-movie-rating-box {
+          @include Flexing(center);
+          margin-bottom: 3.5%;
+
+          li {
+            i {
+              display: inline-block;
+              color: $this-red;
+              font-size: 1.2rem;
+            }
+          }
+
+          li:not(:last-child) {
+            margin-right: 1.5%;
+          }
+        }
+
+        .film-types {
+          .film-type {
+            color: white;
+
+            strong {
+              margin-right: 2.5px;
+            }
+
+            i {
+              display: inline-block;
+              font-size: 1.2rem;
+            }
+          }
+
+          .film-type:not(:last-child) {
+            margin-right: 0.5%;
+          }
+        }
+
+        .film-description {
+          color: white;
+          font-family: "Baloo";
+          padding-right: 22.5%;
+          margin-top: 1.5%;
+        }
+
+        .selected-movie-buttons-box {
+          @include Flexing(center);
+          margin-top: 1.75%;
+
+          a {
+            display: inline-block;
+            font-family: "Baloo";
+            border-radius: 5px;
+            color: white;
+          }
+
+          .watch-btn {
+            background-color: $this-red;
+            padding: 10px 30px;
+            transition: 0.2s;
+
+            &:hover {
+              background-color: $red-btn-hover;
+            }
+          }
+
+          .watchlist-btn {
+            border: 1px solid white;
+            padding: 3px 20px;
+            font-size: 1.2rem;
+            margin-left: 2%;
+            transition: 0.2s;
+
+            &:hover {
+              color: black;
+              background-color: white;
+            }
+          }
+        }
+      }
+
+      .selected-movie-right-side {
+        .img-div {
+          position: relative;
+
+          .selected-movie-play-btn {
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            border: none;
+
+            i {
+              display: inline-block;
+              border-radius: 50%;
+              background-color: $this-red;
+              font-size: 2.4rem;
+              width: 75px;
+              height: 75px;
+              color: white;
+              text-align: center;
+              line-height: 75px;
+            }
+
+            p {
+              font-size: 1.1rem;
+              font-family: "Baloo";
+              color: white;
+            }
+          }
+
+          img {
+            width: 100%;
           }
         }
       }
