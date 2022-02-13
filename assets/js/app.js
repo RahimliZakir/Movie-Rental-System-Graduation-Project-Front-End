@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $("header").load("_header.html");
+  $("footer").load("_footer.html");
 
   let filmsSwiperCarousel = new Swiper(".films-swiper-carousel", {
     pagination: {
