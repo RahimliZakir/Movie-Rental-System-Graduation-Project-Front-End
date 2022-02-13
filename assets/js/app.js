@@ -33,4 +33,8 @@ $(document).ready(function () {
       },
     },
   });
+
+  $(".new-trailer-play-btn").magnificPopup({
+    type: "iframe",
+  });
 });

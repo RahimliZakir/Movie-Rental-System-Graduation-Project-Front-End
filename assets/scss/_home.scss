@@ -336,3 +336,332 @@
     }
   }
 }
+
+#latest-tv-show-start {
+  padding: 3.5% 0;
+  background-color: #1e2129;
+  .latest-tv-show-start-container {
+    .latest-tv-show-start-row {
+      .latest-tv-show-top-left-side {
+        h6 {
+          color: $this-red;
+        }
+
+        h2 {
+          color: white;
+          font-family: "RobotoBold";
+          font-size: 2.2rem;
+        }
+
+        p {
+          color: white;
+          padding-right: 12.5%;
+          margin-bottom: 5%;
+        }
+
+        .latest-tv-show-btn {
+          display: inline-block;
+          color: white;
+          background-color: $this-red;
+          border-radius: 5px;
+          padding: 4px 9px;
+          transition: 0.2s;
+        }
+
+        .latest-tv-show-btn:hover {
+          background-color: #c82333;
+        }
+      }
+
+      .latest-tv-show-top-right-side {
+        .latest-tv-show-top-right-side-row {
+          .latest-tv-show-top-right-side-col {
+            .card {
+              background-color: transparent;
+              border: none;
+              border-radius: 0;
+
+              .img-div {
+                position: relative;
+                width: 100%;
+
+                .latest-tv-show-img-box {
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  @include Flexing(null, space-between, column);
+
+                  .img-box-top {
+                    padding: 3.5% 4% 0;
+                    @include Flexing(center, space-between);
+
+                    .latest-tv-show-badge {
+                      background-color: #ffd230;
+                      padding: 1.5% 2.5%;
+                    }
+
+                    p {
+                      color: white;
+                      font-family: "Baloo";
+                      font-size: 0.8rem;
+                    }
+                  }
+
+                  .img-box-bottom {
+                    padding: 0 4% 3.5%;
+
+                    ul {
+                      @include Flexing(center);
+
+                      li {
+                        a {
+                          display: inline-block;
+                          color: white;
+                        }
+                      }
+
+                      li:not(:last-child) {
+                        margin-right: 3.5%;
+                      }
+                    }
+                  }
+                }
+
+                img {
+                  width: 100%;
+                  height: 300px;
+                  object-fit: cover;
+                  border-radius: 0;
+                  filter: brightness(0.5);
+                  transition: 0.3s;
+                }
+
+                &:hover {
+                  img {
+                    filter: brightness(1);
+                  }
+                }
+              }
+              .card-body {
+                padding-left: 0;
+                padding-right: 0;
+
+                .card-body-about-side {
+                  @include Flexing(center, space-between);
+
+                  .card-bottom-left {
+                    display: inline-block;
+                    font-weight: 600;
+                    color: white;
+                    font-size: 0.9rem;
+                    transition: 0.2s;
+
+                    &:hover {
+                      color: $this-red;
+                    }
+                  }
+
+                  .card-bottom-right {
+                    font-size: 0.9rem;
+                    color: #bcccda;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .latest-tv-show-bottom-col {
+        margin-top: 2.5%;
+
+        .card {
+          background-color: transparent;
+          border: none;
+          border-radius: 0;
+
+          .img-div {
+            position: relative;
+            width: 100%;
+
+            .latest-tv-show-img-box {
+              position: absolute;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              @include Flexing(null, space-between, column);
+
+              .img-box-top {
+                padding: 3.5% 4% 0;
+                @include Flexing(center, space-between);
+
+                .latest-tv-show-badge {
+                  background-color: #ffd230;
+                  padding: 1.5% 2.5%;
+                }
+
+                p {
+                  color: white;
+                  font-family: "Baloo";
+                  font-size: 0.8rem;
+                }
+              }
+
+              .img-box-bottom {
+                padding: 0 4% 3.5%;
+
+                ul {
+                  @include Flexing(center);
+
+                  li {
+                    a {
+                      display: inline-block;
+                      color: white;
+                    }
+                  }
+
+                  li:not(:last-child) {
+                    margin-right: 3.5%;
+                  }
+                }
+              }
+            }
+
+            img {
+              width: 100%;
+              height: 300px;
+              object-fit: cover;
+              border-radius: 0;
+              filter: brightness(0.5);
+              transition: 0.3s;
+            }
+
+            &:hover {
+              img {
+                filter: brightness(1);
+              }
+            }
+          }
+          .card-body {
+            padding-left: 0;
+            padding-right: 0;
+
+            .card-body-about-side {
+              @include Flexing(center, space-between);
+
+              .card-bottom-left {
+                display: inline-block;
+                font-weight: 600;
+                color: white;
+                font-size: 0.9rem;
+                transition: 0.2s;
+
+                &:hover {
+                  color: $this-red;
+                }
+              }
+
+              .card-bottom-right {
+                font-size: 0.9rem;
+                color: #bcccda;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#trailer {
+  padding: 4% 0;
+
+  .trailer-container {
+    .trailer-row {
+      .trailer-left-side {
+        h2 {
+          font-family: "RobotoBold";
+          font-size: 2.4rem;
+        }
+      }
+
+      .trailer-right-side {
+        @include Flexing(center, flex-end);
+
+        a {
+          display: inline-block;
+          color: white;
+          background-color: $this-red;
+          border-radius: 5px;
+          padding: 4px 9px;
+          transition: 0.2s;
+
+          &:hover {
+            background-color: #c82333;
+          }
+        }
+      }
+
+      .trailer-bottom-cards-col {
+        margin-top: 3.5%;
+        .card {
+          background-color: transparent;
+          border: none;
+          border-radius: 0;
+
+          .img-div {
+            position: relative;
+            width: 100%;
+
+            .play-side {
+              position: absolute;
+              @include Flexing(center, center);
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+
+              a {
+                display: inline-block;
+                color: white;
+                font-size: 4rem;
+                transition: 0.3s;
+
+                &:hover {
+                  color: $this-red;
+                }
+              }
+            }
+
+            img {
+              width: 100%;
+              height: 300px;
+              object-fit: cover;
+              border-radius: 10px;
+              transition: 0.3s;
+            }
+          }
+          .card-body {
+            padding-left: 0;
+            padding-right: 0;
+
+            .card-body-about {
+              display: inline-block;
+              font-weight: 600;
+              color: black;
+              font-size: 1.1rem;
+              transition: 0.2s;
+            }
+
+            .card-body-description {
+              color: #7b7b7b;
+            }
+          }
+        }
+      }
+    }
+  }
+}
