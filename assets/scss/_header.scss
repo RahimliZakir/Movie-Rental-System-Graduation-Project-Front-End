@@ -40,6 +40,11 @@ header {
                 background-color: $this-red;
                 border-radius: 5px;
                 padding: 10px 30px;
+                transition: 0.2s;
+
+                &:hover {
+                  background-color: $red-btn-hover;
+                }
               }
             }
 

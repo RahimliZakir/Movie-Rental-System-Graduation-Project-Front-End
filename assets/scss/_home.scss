@@ -75,6 +75,11 @@
                 .watch-btn {
                   background-color: $this-red;
                   padding: 10px 30px;
+                  transition: 0.2s;
+
+                  &:hover {
+                    background-color: $red-btn-hover;
+                  }
                 }
 
                 .watchlist-btn {
@@ -102,6 +107,76 @@
 
       span.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
         background-color: $this-red;
+      }
+    }
+  }
+}
+
+#top-categories {
+  background-color: #1e2129;
+  padding: 5% 0;
+  .top-categories-container {
+    .top-categories-row {
+      .top-categories-left-side {
+        .top-categories-lil-heading {
+          color: $this-red;
+        }
+
+        .top-categories-big-heading {
+          color: white;
+          font-family: "RobotoBold";
+          font-size: 2.2rem;
+          padding-right: 30%;
+        }
+
+        .top-categories-description {
+          color: white;
+          font-family: "Baloo";
+          padding-right: 9.5%;
+          margin: 2.5% 0;
+        }
+
+        .top-categories-btn {
+          display: inline-block;
+          color: $this-red;
+          border: 1px solid $this-red;
+          border-radius: 5px;
+          padding: 7.5px 12.5px;
+          transition: 0.3s;
+        }
+
+        .top-categories-btn:hover {
+          background-color: $this-red;
+          color: white;
+        }
+      }
+
+      .top-categories-right-side {
+        .top-categories-cards-row {
+          .top-categories-cards-col {
+            margin-bottom: 3.5%;
+            .img-div {
+              position: relative;
+              img {
+                width: 100%;
+                border-radius: 5px;
+              }
+
+              span {
+                position: absolute;
+                color: white;
+                font-family: "Baloo";
+                left: 5%;
+                bottom: 5%;
+                font-weight: 600;
+              }
+            }
+          }
+
+          // .top-categories-cards-col:nth-child(2) {
+          //   margin-top: 5%;
+          // }
+        }
       }
     }
   }
