@@ -1329,4 +1329,197 @@ footer #copyright .copyright-container .copyright-content {
 #selected-movie .selected-movie-container .selected-movie-row .selected-movie-right-side .img-div img {
   width: 100%;
 }
+
+#faq {
+  background-color: #e1e1e1;
+  padding: 15% 0 5% 0;
+}
+
+.accordion {
+  overflow: hidden;
+}
+
+.accordion .collapsed,
+.accordion .expanding {
+  display: none;
+}
+
+.faq-heading {
+  font-size: 2.6rem;
+  font-family: "RobotoBold";
+  margin-bottom: 2.5%;
+}
+
+.acc-heading {
+  font-size: 1.4rem;
+  padding: 1.5% 1% !important;
+}
+
+.acc-heading i {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.card-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #222;
+}
+
+.card-header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 1.8rem 0.5rem;
+}
+
+.card-header a:hover {
+  color: #26c;
+}
+
+.card-header a::after {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0.5rem;
+  font-family: riode;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #222;
+}
+
+.card-header .collapse {
+  color: #26c;
+}
+
+.expand::after {
+  content: "\e953";
+}
+
+.collapse::after {
+  content: "\e952";
+}
+
+.card-body {
+  padding: 1.3rem 0.5rem;
+}
+
+.card {
+  background-color: #fff;
+}
+
+.accordion-simple .card {
+  border-top: 1px solid #e1e1e1;
+}
+
+.accordion-gutter-md .card:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.accordion-gutter-sm .card:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.accordion-plus .expand::after {
+  content: "\f2c3";
+}
+
+.accordion-plus .collapse::after {
+  content: "\f28f";
+}
+
+.accordion-boxed .card-body,
+.accordion-boxed .card-header a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.accordion-boxed .card-header a::after {
+  right: 2.3rem;
+}
+
+.accordion-border .card {
+  border-width: 1px 1px 0;
+  border-style: solid;
+  border-color: #e1e1e1;
+}
+
+.accordion-border .card:last-child {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.accordion-background .card {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.accordion-dropshadow {
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
+}
+
+.accordion-dropshadow .card {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.accordion-icon .card-header i {
+  margin-right: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 0;
+}
+
+.accordion-card-bg .card {
+  border: 1px solid #f2f3f5;
+}
+
+.accordion-card-bg .card-header a {
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  background-color: #f2f3f5;
+}
+
+.accordion-card-bg.accordion-primary .card {
+  border: 0;
+  background-color: #f2f3f5;
+}
+
+.accordion-card-bg.accordion-primary .card-header a {
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  background-color: #37c;
+  color: #fff;
+}
+
+.accordion-card-bg.accordion-primary .card-header a::after {
+  color: #fff;
+}
+
+.accordion-color .collapse {
+  color: #26c;
+}
+
+.accordion-card-border .card {
+  border: 1px solid #dae1e5;
+}
+
+.acc-heading {
+  color: #222222;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.acc-heading:hover {
+  color: #e41a1a !important;
+}
 /*# sourceMappingURL=style.css.map */
