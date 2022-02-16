@@ -1337,7 +1337,15 @@ footer #copyright .copyright-container .copyright-content {
 #faq-cards-animation {
   background-image: radial-gradient(circle at top center, rgba(17, 17, 17, 0) 10%, rgba(17, 17, 17, 0.8) 70%), url("../images/faq/inner-background.jpg");
   background-repeat: repeat-y;
-  padding: 10% 0;
+  -webkit-animation-name: MoveBackground;
+          animation-name: MoveBackground;
+  -webkit-animation-duration: 300s;
+          animation-duration: 300s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  padding: 20% 0 12.5% 0;
 }
 
 #faq-cards-animation .faq-cards-animation-container .faq-cards-animation-row h2 {
@@ -1349,15 +1357,19 @@ footer #copyright .copyright-container .copyright-content {
 
 @-webkit-keyframes MoveBackground {
   from {
+    background-position: 0 0;
   }
   to {
+    background-position: 0 -3000px;
   }
 }
 
 @keyframes MoveBackground {
   from {
+    background-position: 0 0;
   }
   to {
+    background-position: 0 -3000px;
   }
 }
 

@@ -6,11 +6,15 @@
     ),
     url("../images/faq/inner-background.jpg");
   background-repeat: repeat-y;
-  padding: 10% 0;
+  animation-name: MoveBackground;
+  animation-duration: 300s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  padding: 20% 0 12.5% 0;
 
   .faq-cards-animation-container {
     .faq-cards-animation-row {
-      h2 { 
+      h2 {
         font-family: "Baloo";
         font-weight: 600;
         font-size: 4.4rem;
@@ -22,10 +26,11 @@
 
 @keyframes MoveBackground {
   from {
-    
+    background-position: 0 0;
   }
 
   to {
+    background-position: 0 -3000px;
   }
 }
 
