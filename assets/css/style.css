@@ -100,6 +100,10 @@ header nav .nav-container .nav-row .right-nav .nav-links li a {
   font-weight: 600;
 }
 
+header nav .nav-container .nav-row .right-nav .nav-links li .active {
+  color: #e41a1a;
+}
+
 header nav .nav-container .nav-row .right-nav .nav-links li.nav-login-li a {
   background-color: #e41a1a;
   border-radius: 5px;
@@ -1330,9 +1334,36 @@ footer #copyright .copyright-container .copyright-content {
   width: 100%;
 }
 
+#faq-cards-animation {
+  background-image: radial-gradient(circle at top center, rgba(17, 17, 17, 0) 10%, rgba(17, 17, 17, 0.8) 70%), url("../images/faq/inner-background.jpg");
+  background-repeat: repeat-y;
+  padding: 10% 0;
+}
+
+#faq-cards-animation .faq-cards-animation-container .faq-cards-animation-row h2 {
+  font-family: "Baloo";
+  font-weight: 600;
+  font-size: 4.4rem;
+  color: white;
+}
+
+@-webkit-keyframes MoveBackground {
+  from {
+  }
+  to {
+  }
+}
+
+@keyframes MoveBackground {
+  from {
+  }
+  to {
+  }
+}
+
 #faq {
   background-color: #e1e1e1;
-  padding: 15% 0 5% 0;
+  padding: 5% 0;
 }
 
 .accordion {
