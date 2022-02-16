@@ -2030,4 +2030,41 @@ footer #copyright .copyright-container .copyright-content {
   font-size: 0.9rem;
   color: #bcccda;
 }
+
+#contactus-cards-animation {
+  background-image: radial-gradient(circle at top center, rgba(17, 17, 17, 0) 10%, rgba(17, 17, 17, 0.8) 70%), url("../images/common/inner-background.jpg");
+  background-repeat: repeat-y;
+  -webkit-animation-name: MoveBackground;
+          animation-name: MoveBackground;
+  -webkit-animation-duration: 300s;
+          animation-duration: 300s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  padding: 20% 0 12.5% 0;
+}
+
+#contactus-cards-animation .contactus-cards-animation-container .contactus-cards-animation-row h2 {
+  font-family: "Baloo";
+  font-size: 3.2rem;
+  color: white;
+}
+
+#contactus-cards-animation .contactus-cards-animation-container .contactus-cards-animation-row p {
+  font-family: "Baloo";
+  color: white;
+  font-size: 1.1rem;
+}
+
+#contact-side {
+  padding: 3.5% 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+#contact-side .contact-side-container .contact-side-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
