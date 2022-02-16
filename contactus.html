@@ -44,17 +44,77 @@
             ></iframe>
           </div>
           <div class="col-6 contact-side-right-part">
-            <h5 class="contact-side-heading">Get in Touch</h5>
+            <h2 class="contact-side-heading">Get in Touch</h2>
             <p class="contact-side-description">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
-            <form id="contact-side-form">
-              <div class="col-6">
-                <label for="">Firstname</label>
-                <input type="text" placeholder="Please enter your firstname" />
+            <form id="contact-side-form" class="row">
+              <div class="col-6 firstname-input-col">
+                <label for="firstname-input" class="label-required"
+                  >Firstname</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstname-input"
+                  placeholder="Please enter your firstname"
+                />
               </div>
-              <div class="col-6"></div>
+              <div class="col-6 lastname-input-col">
+                <label for="lastname-input" class="label-required"
+                  >Lastname</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastname-input"
+                  placeholder="Please enter your lastname"
+                />
+              </div>
+              <div class="col-6 email-input-col">
+                <label for="email-input" class="label-required">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email-input"
+                  placeholder="Please enter your email"
+                />
+              </div>
+              <div class="col-6 need-select-col">
+                <label for="need-select" class="label-required"
+                  >Please specify your need</label
+                >
+                <select class="form-control" id="need-select">
+                  <option value="" selected></option>
+                  <option value="Request quotation">Request quotation</option>
+                  <option value="Request order status">
+                    Request order status
+                  </option>
+                  <option value="Request copy of an invoice">
+                    Request copy of an invoice
+                  </option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="col-12 message-textarea-col">
+                <label for="message-textarea" class="label-required"
+                  >Message</label
+                >
+                <textarea
+                  id="message-textarea"
+                  class="form-control"
+                  cols="30"
+                  rows="3"
+                  placeholder="Message for me"
+                ></textarea>
+              </div>
+              <div class="col-12 button-col">
+                <button type="submit" class="disabled">Send message</button>
+              </div>
+              <div class="col-12 warn-col">
+                <p><strong>*</strong> These fields are required.</p>
+              </div>
             </form>
           </div>
         </div>

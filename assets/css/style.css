@@ -54,6 +54,15 @@ a {
   text-decoration: none;
 }
 
+.label-required {
+  position: relative;
+}
+
+.label-required::after {
+  content: "*";
+  position: absolute;
+}
+
 header nav {
   position: absolute;
   z-index: 100;
@@ -2058,7 +2067,7 @@ footer #copyright .copyright-container .copyright-content {
 }
 
 #contact-side {
-  padding: 3.5% 0;
+  padding: 5% 0;
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -2066,5 +2075,97 @@ footer #copyright .copyright-container .copyright-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-left-part iframe {
+  display: inline-block;
+  width: 100%;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part .contact-side-heading {
+  font-family: "Baloo";
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part .contact-side-description {
+  font-family: "Baloo";
+  color: #7b7b7b;
+  padding-right: 15%;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] {
+  margin-top: 2.5%;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] label {
+  display: inline-block;
+  font-family: "Baloo";
+  margin-bottom: 1.5%;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] input::-webkit-input-placeholder,
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] textarea::-webkit-input-placeholder {
+  font-family: "Baloo";
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] input:-ms-input-placeholder,
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] textarea:-ms-input-placeholder {
+  font-family: "Baloo";
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] input::-ms-input-placeholder,
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] textarea::-ms-input-placeholder {
+  font-family: "Baloo";
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] input::placeholder,
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] textarea::placeholder {
+  font-family: "Baloo";
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form .button-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form .button-col button {
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  background-color: #e41a1a;
+  font-family: "Roboto";
+  padding: 8.5px 32.5px;
+  border: none;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form .button-col button.disabled {
+  background-color: #ed6b6b;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form .warn-col p {
+  color: #7b7b7b;
+  font-family: "Baloo";
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form .warn-col p strong {
+  margin-right: 0.75%;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form .form-control {
+  border-radius: 0;
 }
 /*# sourceMappingURL=style.css.map */

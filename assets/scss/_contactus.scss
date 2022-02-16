@@ -30,7 +30,7 @@
 }
 
 #contact-side {
-  padding: 3.5% 0;
+  padding: 5% 0;
   border-bottom: 1px solid $border-color;
 
   .contact-side-container {
@@ -38,6 +38,76 @@
       align-items: center;
 
       .contact-side-left-part {
+        iframe {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+
+      .contact-side-right-part {
+        .contact-side-heading {
+          font-family: "Baloo";
+          font-weight: 600;
+          font-size: 2.2rem;
+        }
+
+        .contact-side-description {
+          font-family: "Baloo";
+          color: #7b7b7b;
+          padding-right: 15%;
+        }
+
+        #contact-side-form {
+          align-items: center;
+
+          [class*="col"] {
+            margin-top: 2.5%;
+
+            label {
+              display: inline-block;
+              font-family: "Baloo";
+              margin-bottom: 1.5%;
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+              font-family: "Baloo";
+            }
+          }
+
+          .button-col {
+            @include Flexing(center, flex-end);
+
+            button {
+              display: inline-block;
+              color: white;
+              border-radius: 5px;
+              background-color: $this-red;
+              font-family: "Roboto";
+              padding: 8.5px 32.5px;
+              border: none;
+
+              &.disabled {
+                background-color: #ed6b6b;
+              }
+            }
+          }
+
+          .warn-col {
+            p {
+              color: #7b7b7b;
+              font-family: "Baloo";
+
+              strong {
+                margin-right: 0.75%;
+              }
+            }
+          }
+
+          .form-control {
+            border-radius: 0;
+          }
+        }
       }
     }
   }
