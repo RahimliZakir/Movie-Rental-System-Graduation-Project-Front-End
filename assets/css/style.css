@@ -1806,4 +1806,228 @@ footer #copyright .copyright-container .copyright-content {
 #latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col .card .card-body .latest-movies-tags-ul li:not(:last-child) {
   margin-right: 5px;
 }
+
+#shows-cards-animation {
+  background-image: radial-gradient(circle at top center, rgba(17, 17, 17, 0) 10%, rgba(17, 17, 17, 0.8) 70%), url("../images/common/inner-background.jpg");
+  background-repeat: repeat-y;
+  -webkit-animation-name: MoveBackground;
+          animation-name: MoveBackground;
+  -webkit-animation-duration: 300s;
+          animation-duration: 300s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  padding: 20% 0 12.5% 0;
+}
+
+#shows-cards-animation .shows-cards-animation-container .shows-cards-animation-row .shows-cards-main-heading {
+  font-family: "Baloo";
+  font-size: 3.2rem;
+  color: white;
+}
+
+#shows-cards-animation .shows-cards-animation-container .shows-cards-animation-row .shows-cards-other-heading {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Baloo";
+  font-weight: 600;
+}
+
+#shows-cards-animation .shows-cards-animation-container .shows-cards-animation-row .shows-cards-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shows-cards-animation .shows-cards-animation-container .shows-cards-animation-row .shows-cards-list .shows-cards-item .shows-cards-badge {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  background-color: #e41a1a;
+  font-weight: 400;
+  padding: 6px 12px;
+  font-family: "Baloo";
+}
+
+#shows-cards-animation .shows-cards-animation-container .shows-cards-animation-row .shows-cards-list .shows-cards-item:not(:last-child) {
+  margin-right: 1.5%;
+}
+
+#latest-tv-show-start {
+  padding: 5% 0;
+  background-color: #1e2129;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-left-heading-side h2 {
+  font-family: "RobotoBold";
+  color: white;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-right-view-all-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-right-view-all-side a {
+  display: inline-block;
+  color: white;
+  background-color: #e41a1a;
+  border-radius: 5px;
+  padding: 4px 9px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-right-view-all-side a:hover {
+  background-color: #c82333;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col {
+  margin-top: 2.5%;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div {
+  position: relative;
+  width: 100%;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-top {
+  padding: 3.5% 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-top .latest-tv-show-badge {
+  background-color: #ffd230;
+  padding: 1.5% 2.5%;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-top p {
+  color: white;
+  font-family: "Baloo";
+  font-size: 0.8rem;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-bottom {
+  padding: 0 4% 3.5%;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-bottom ul li a {
+  display: inline-block;
+  color: white;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-bottom ul li:not(:last-child) {
+  margin-right: 3.5%;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .img-div:hover img {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .card-body .card-body-about-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .card-body .card-body-about-side .card-bottom-left {
+  display: inline-block;
+  font-weight: 600;
+  color: white;
+  font-size: 0.9rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .card-body .card-body-about-side .card-bottom-left:hover {
+  color: #e41a1a;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .card-body .card-body-about-side .card-bottom-right {
+  font-size: 0.9rem;
+  color: #bcccda;
+}
 /*# sourceMappingURL=style.css.map */
