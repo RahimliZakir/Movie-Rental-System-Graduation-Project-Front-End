@@ -73,6 +73,17 @@
             textarea::placeholder {
               font-family: "Baloo";
             }
+
+            .error-text {
+              visibility: hidden;
+              color: #7b7b7b;
+              font-family: "Baloo";
+              margin-top: 1.5%;
+
+              &.error-active {
+                visibility: visible;
+              }
+            }
           }
 
           .button-col {

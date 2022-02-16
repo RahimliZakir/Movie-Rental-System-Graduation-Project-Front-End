@@ -2130,6 +2130,17 @@ footer #copyright .copyright-container .copyright-content {
   font-family: "Baloo";
 }
 
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] .error-text {
+  visibility: hidden;
+  color: #7b7b7b;
+  font-family: "Baloo";
+  margin-top: 1.5%;
+}
+
+#contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] .error-text.error-active {
+  visibility: visible;
+}
+
 #contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form .button-col {
   display: -webkit-box;
   display: -ms-flexbox;
