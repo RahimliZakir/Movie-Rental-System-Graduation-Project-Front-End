@@ -2179,4 +2179,176 @@ footer #copyright .copyright-container .copyright-content {
 #contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form .form-control {
   border-radius: 0;
 }
+
+#login {
+  padding: 7.5% 0;
+}
+
+#login .login-container .login-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#login .login-container .login-row .login-col-row .login-left-side {
+  background-color: #f7f9fe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#login .login-container .login-row .login-col-row .login-left-side .img-div {
+  width: 100%;
+}
+
+#login .login-container .login-row .login-col-row .login-left-side .img-div img {
+  width: 100%;
+}
+
+#login .login-container .login-row .login-col-row .login-right-side {
+  -webkit-box-shadow: 3px 3px 16px 2px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 3px 16px 2px rgba(0, 0, 0, 0.04);
+  padding: 7.5% 5%;
+}
+
+#login .login-container .login-row .login-col-row .login-right-side .login-side-heading {
+  font-family: "Baloo";
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#login .login-container .login-row .login-col-row .login-right-side .login-side-description {
+  font-family: "Baloo";
+  font-size: 1.1rem;
+  margin-bottom: 4%;
+}
+
+#login .login-container .login-row .login-col-row .login-right-side #login-side-form .form-group {
+  margin-bottom: 4%;
+}
+
+#login .login-container .login-row .login-col-row .login-right-side #login-side-form .form-group label {
+  display: inline-block;
+  font-family: "Baloo";
+}
+
+#login .login-container .login-row .login-col-row .login-right-side #login-side-form .form-group #email-address-input,
+#login .login-container .login-row .login-col-row .login-right-side #login-side-form .form-group #password-input {
+  display: inline-block;
+  border-radius: 0;
+  border: 2px solid #eeeeee;
+}
+
+#login .login-container .login-row .login-col-row .login-right-side #login-side-form .login-side-btn-div {
+  margin-bottom: 4%;
+}
+
+#login .login-container .login-row .login-col-row .login-right-side #login-side-form .login-side-btn-div .login-side-btn {
+  display: inline-block;
+  background-color: #e41a1a;
+  font-family: "Baloo";
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 30px;
+}
+
+#login .login-container .login-row .login-col-row .login-right-side #login-side-form .link-to-register {
+  display: inline-block;
+  color: #8f8f8f;
+  font-family: "Baloo";
+}
+
+#login .login-container .login-row .login-col-row .login-right-side #login-side-form .link-to-register:hover {
+  color: #e41a1a;
+}
+
+#register {
+  padding: 7.5% 0;
+}
+
+#register .register-container .register-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#register .register-container .register-row .register-col-row .register-left-side {
+  background-color: #f7f9fe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#register .register-container .register-row .register-col-row .register-left-side .img-div {
+  width: 100%;
+}
+
+#register .register-container .register-row .register-col-row .register-left-side .img-div img {
+  width: 100%;
+}
+
+#register .register-container .register-row .register-col-row .register-right-side {
+  -webkit-box-shadow: 3px 3px 16px 2px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 3px 16px 2px rgba(0, 0, 0, 0.04);
+  padding: 7.5% 5%;
+}
+
+#register .register-container .register-row .register-col-row .register-right-side .register-side-heading {
+  font-family: "Baloo";
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#register .register-container .register-row .register-col-row .register-right-side .register-side-description {
+  font-family: "Baloo";
+  font-size: 1.1rem;
+  margin-bottom: 4%;
+}
+
+#register .register-container .register-row .register-col-row .register-right-side #login-side-form .form-group {
+  margin-bottom: 4%;
+}
+
+#register .register-container .register-row .register-col-row .register-right-side #login-side-form .form-group label {
+  display: inline-block;
+  font-family: "Baloo";
+}
+
+#register .register-container .register-row .register-col-row .register-right-side #login-side-form .form-group #email-address-input,
+#register .register-container .register-row .register-col-row .register-right-side #login-side-form .form-group #password-input {
+  display: inline-block;
+  border-radius: 0;
+  border: 2px solid #eeeeee;
+}
+
+#register .register-container .register-row .register-col-row .register-right-side #login-side-form .register-side-btn-div {
+  margin-bottom: 4%;
+}
+
+#register .register-container .register-row .register-col-row .register-right-side #login-side-form .register-side-btn-div .register-side-btn {
+  display: inline-block;
+  background-color: #e41a1a;
+  font-family: "Baloo";
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 30px;
+}
+
+#register .register-container .register-row .register-col-row .register-right-side #login-side-form .link-to-login {
+  display: inline-block;
+  color: #8f8f8f;
+  font-family: "Baloo";
+}
+
+#register .register-container .register-row .register-col-row .register-right-side #login-side-form .link-to-login:hover {
+  color: #e41a1a;
+}
 /*# sourceMappingURL=style.css.map */
