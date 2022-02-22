@@ -52,6 +52,26 @@ header {
               }
             }
 
+            .cart-shopping-li,
+            .wishlist-li {
+              position: relative;
+
+              span {
+                position: absolute;
+                display: inline-block;
+                color: white;
+                background-color: $this-red;
+                width: 15px;
+                height: 15px;
+                text-align: center;
+                line-height: 15px;
+                border-radius: 50%;
+                font-size: 0.7rem;
+                right: -50%;
+                bottom: 65%;
+              }
+            }
+
             li:not(:last-child) {
               margin-right: 5%;
             }

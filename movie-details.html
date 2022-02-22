@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Details | YouVideo</title>
+    <link rel="stylesheet" href="assets/sources/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/sources/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- movie fragment start -->
+    <section id="movie-fragment">
+      <div class="container movie-fragment-container">
+        <div class="row movie-fragment-row">
+          <div class="col-12 movie-fragment-col">
+            <div class="movie-iframe-div">
+              <a href="movies.html" class="go-back-btn">
+                <i class="fa-solid fa-left-long"></i> <span>BACK</span>
+              </a>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/eOrNdBpGMv8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- movie fragment end -->
+    <!-- movie description start -->
+    <section id="movie-description">
+      <div class="container movie-description-container">
+        <div class="row movie-description-row">
+          <div class="col-12 films-swiper-col">
+            <span class="badge films-swiper-badge text-dark">Premium</span>
+            <h2>Avenger: Endgame</h2>
+            <div class="specifications">
+              <p class="specification-item">Henry Cavill (Justice League)</p>
+              <p class="specification-item">Tom Welling (Smallville)</p>
+            </div>
+            <ul class="film-types">
+              <li class="film-type">
+                <i class="bi bi-badge-hd-fill"></i>
+              </li>
+              <li class="film-type"><strong>Rated:</strong>8.5</li>
+              <li class="film-type">
+                <strong>Genre:</strong>Horror, Comedy, Action, Sci-fi.
+              </li>
+            </ul>
+            <div class="film-description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </div>
+            <div class="films-swiper-buttons-box">
+              <a href="#" class="watch-btn">Watch</a>
+              <a href="#" class="watchlist-btn">+ Add To Watchlist</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- movie description end -->
+
+    <script src="assets/sources/js/jquery.min.js"></script>
+    <script src="assets/js/movie-details.js"></script>
+  </body>
+</html>
