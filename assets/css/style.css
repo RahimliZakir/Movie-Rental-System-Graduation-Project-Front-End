@@ -3063,6 +3063,10 @@ body {
   height: 600px;
 }
 
+#movie-description {
+  padding: 5% 0;
+}
+
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .films-swiper-badge {
   background-color: #ffd230;
   padding: 0.5% 1%;
@@ -3124,6 +3128,7 @@ body {
 }
 
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .release-date {
+  margin-top: 0.5%;
   color: #7b7b7b;
   font-family: "Baloo";
   margin-top: 1%;
@@ -3138,6 +3143,65 @@ body {
   display: inline-block;
   color: #e41a1a;
   font-weight: 400;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .genres-ul {
+  margin-top: 0.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .genres-ul .genres-item-title {
+  color: #7b7b7b;
+  font-family: "Baloo";
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .genres-ul .genres-item a {
+  font-family: "Baloo";
+  display: inline-block;
+  color: black;
+  font-weight: 600;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .genres-ul .genres-item {
+  margin-left: 0.5%;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .casts-ul {
+  margin-top: 0.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .casts-ul .casts-item-title {
+  color: #7b7b7b;
+  font-family: "Baloo";
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .casts-ul .casts-item a {
+  font-family: "Baloo";
+  display: inline-block;
+  color: black;
+  font-weight: 600;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .casts-ul .casts-item {
+  margin-left: 0.5%;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .film-description {
+  font-family: "Baloo";
+  color: #7b7b7b;
+  padding-right: 42.5%;
+  margin-top: 0.5%;
 }
 
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .film-types {
@@ -3164,12 +3228,6 @@ body {
 
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .film-types .film-type:not(:last-child) {
   margin-right: 0.5%;
-}
-
-#movie-description .movie-description-container .movie-description-row .films-swiper-col .film-description {
-  color: white;
-  font-family: "Baloo";
-  padding-right: 22.5%;
 }
 
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .films-swiper-buttons-box {
@@ -3201,16 +3259,331 @@ body {
 }
 
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .films-swiper-buttons-box .watchlist-btn {
-  border: 1px solid white;
-  padding: 3px 20px;
+  border: 1px solid #343a40;
+  padding: 6.5px 30px;
   font-size: 1.2rem;
+  color: black;
   margin-left: 2%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .films-swiper-buttons-box .watchlist-btn:hover {
+  color: white;
+  background-color: #343a40;
+}
+
+#movie-description-comment {
+  padding: 2.5% 0;
+  border-top: 1px solid #ededed;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .movie-description-comment-col .comment-heading {
   color: black;
-  background-color: white;
+  font-family: "Baloo";
+  font-weight: 600;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .movie-description-comment-col .comment-helper-text {
+  color: #7b7b7b;
+  font-family: "Baloo";
+  margin-bottom: 1%;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .movie-description-comment-col #movie-description-comment-form .form-group .movie-description-textarea {
+  border-radius: 0;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .movie-description-comment-col #movie-description-comment-form .form-group #movie-details-spoiler + label {
+  font-family: "Baloo";
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .movie-description-comment-col #movie-description-comment-form .comment-btn-side button {
+  display: inline-block;
+  background-color: #e41a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 7.5px 25px;
+  font-family: "Baloo";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .movie-description-comment-col #movie-description-comment-form .comment-btn-side button:hover {
+  background-color: #d93535;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col {
+  padding-left: 5%;
+  padding-right: 2.5%;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment {
+  margin-top: 2.5%;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div {
+  width: 60%;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side {
+  position: relative;
+  background-color: #343946;
+  border-radius: 4px;
+  padding: 1.5% 1%;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #343946;
+  border-bottom: 5px solid transparent;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-content-heading,
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-content-content {
+  font-family: "Baloo";
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-content-heading {
+  color: #777777;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-content-content {
+  color: white;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-bottom-box {
+  margin-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-bottom-box .reply-btn,
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-bottom-box .comment-date {
+  color: #777777;
+  font-size: 0.9rem;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-bottom-box .reply-btn {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-bottom-box .reply-btn:hover {
+  color: #e41a1a;
+  text-decoration: underline;
+}
+
+#movie-description-comment .movie-description-comment-container .movie-description-comment-row .movie-details-replies .written-comment.reply {
+  padding-left: 7.5%;
+}
+
+#more-like-these {
+  padding: 5% 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-left-heading-side h2 {
+  font-family: "RobotoBold";
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-right-view-all-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-right-view-all-side a {
+  display: inline-block;
+  color: white;
+  background-color: #e41a1a;
+  border-radius: 5px;
+  padding: 4px 9px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-right-view-all-side a:hover {
+  background-color: #c82333;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col {
+  margin-top: 2.5%;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card {
+  border-radius: 0;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div {
+  position: relative;
+  width: 100%;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div .latest-movies-img-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-top {
+  padding: 3.5% 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-top .latest-movies-badge {
+  background-color: #ffd230;
+  padding: 1.5% 2.5%;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-top p {
+  color: white;
+  font-family: "Baloo";
+  font-size: 0.8rem;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-bottom {
+  padding: 0 4% 3.5%;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-bottom ul li a {
+  display: inline-block;
+  color: white;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-bottom ul li:not(:last-child) {
+  margin-right: 3.5%;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .img-div:hover img {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .card-body {
+  background-color: #f9fbfd;
+  padding: 5% 7.5%;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .card-body .card-body-about-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .card-body .card-body-about-side a {
+  display: inline-block;
+  font-weight: 600;
+  color: #8f8f8f;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .card-body .card-body-about-side a:hover {
+  color: #e41a1a;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .card-body .card-body-about-side p {
+  font-family: "Baloo";
+  color: #e41a1a;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .card-body .latest-movies-tags-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .card-body .latest-movies-tags-ul li a {
+  display: inline-block;
+  color: black;
+  font-family: "Baloo";
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+#more-like-these .more-like-these-container .more-like-these-row .latest-movies-card-col .card .card-body .latest-movies-tags-ul li:not(:last-child) {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
