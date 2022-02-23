@@ -250,11 +250,14 @@
     background-color: #fff;
   }
   .bg-g1 {
-    background: #7918f2;
-    background: -webkit-linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff);
-    background: -o-linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff);
-    background: -moz-linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff);
-    background: linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff);
+    background-image: linear-gradient(
+        90deg,
+        rgba(21, 21, 21, 0.034518030845150593) 0%,
+        rgba(21, 21, 21, 0.720792540649072) 0%
+      ),
+      url(../images/coming-soon/3559666.jpg);
+    background-size: cover;
+    background-position: bottom;
   }
   .bor1 {
     border-bottom: 3px solid #3a5dff;
@@ -305,11 +308,12 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: #7918f2;
-    background: -webkit-linear-gradient(45deg, #ac32e4, #7918f2, #4801ff);
-    background: -o-linear-gradient(45deg, #ac32e4, #7918f2, #4801ff);
-    background: -moz-linear-gradient(45deg, #ac32e4, #7918f2, #4801ff);
-    background: linear-gradient(45deg, #ac32e4, #7918f2, #4801ff);
+    background: rgb(255, 120, 18);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 120, 18, 1) 12%,
+      rgba(253, 29, 29, 1) 100%
+    );
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;

@@ -61,8 +61,8 @@ $(function () {
     if ($(emailInput).val() == "") {
       $(emailInput).next(".error-text").addClass("error-active");
     } else {
-      console.log(pattern.test($(emailInput).val()));
       if (pattern.test($(emailInput).val())) {
+        alert("Valid");
         $(emailInput).next(".error-text").removeClass("error-active");
       } else {
         $(emailInput).next(".error-text").addClass("error-active");

@@ -2648,8 +2648,10 @@ footer #copyright .copyright-container .copyright-content {
 }
 
 #coming .bg-g1 {
-  background: #7918f2;
-  background: linear-gradient(-45deg, #ac32e4, #7918f2, #4801ff);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(21, 21, 21, 0.034518)), color-stop(0%, rgba(21, 21, 21, 0.720793))), url(../images/coming-soon/3559666.jpg);
+  background-image: linear-gradient(90deg, rgba(21, 21, 21, 0.034518) 0%, rgba(21, 21, 21, 0.720793) 0%), url(../images/coming-soon/3559666.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 #coming .bor1 {
@@ -2711,8 +2713,9 @@ footer #copyright .copyright-container .copyright-content {
   height: 100%;
   top: 0;
   left: 0;
-  background: #7918f2;
-  background: linear-gradient(45deg, #ac32e4, #7918f2, #4801ff);
+  background: #ff7812;
+  background: -webkit-gradient(linear, left top, right top, color-stop(12%, #ff7812), to(#fd1d1d));
+  background: linear-gradient(90deg, #ff7812 12%, #fd1d1d 100%);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   opacity: 0;
@@ -3038,7 +3041,7 @@ body {
 
 #movie-fragment {
   background-color: #303030;
-  padding: 5%;
+  padding: 12.5% 5% 5%;
 }
 
 #movie-fragment .movie-fragment-container .movie-fragment-row .movie-fragment-col .movie-iframe-div {
