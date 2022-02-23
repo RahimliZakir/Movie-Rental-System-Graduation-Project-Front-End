@@ -4371,4 +4371,13 @@ body {
   text-align: center;
   font-size: 3.5rem;
 }
+
+#blogs {
+  padding: 5% 0;
+  border-bottom: 1px solid #ededed;
+}
+
+#blogs .blogs-container .blogs-row .blogs-col .blogs-card .card-body {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
