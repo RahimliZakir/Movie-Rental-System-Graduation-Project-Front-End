@@ -25,4 +25,8 @@ $(document).ready(function () {
     $(this).prevAll("i").removeClass("far").addClass("fas");
     clickHandler = true;
   });
+
+  $(".cinema-seats .seat").on("click", function () {
+    $(this).toggleClass("active");
+  });
 });

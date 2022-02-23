@@ -1,11 +1,11 @@
-#movie-fragment {
+#show-fragment {
   background-color: #303030;
   padding: 12.5% 5% 5%;
 
-  .movie-fragment-container {
-    .movie-fragment-row {
-      .movie-fragment-col {
-        .movie-iframe-div {
+  .show-fragment-container {
+    .show-fragment-row {
+      .show-fragment-col {
+        .show-image-div {
           position: relative;
 
           .go-back-btn {
@@ -20,10 +20,10 @@
             }
           }
 
-          iframe {
-            display: inline-block;
+          img {
             width: 100%;
             height: 600px;
+            object-fit: cover;
           }
         }
       }
@@ -31,11 +31,11 @@
   }
 }
 
-#movie-description {
+#show-description {
   padding: 5% 0;
 
-  .movie-description-container {
-    .movie-description-row {
+  .show-description-container {
+    .show-description-row {
       .films-swiper-col {
         .films-swiper-badge {
           background-color: #ffd230;
@@ -180,8 +180,8 @@
         }
 
         .films-swiper-buttons-box {
-          @include Flexing(center);
           margin-top: 1.75%;
+          @include Flexing(flex-start, null, column);
 
           a {
             display: inline-block;
@@ -190,27 +190,229 @@
             color: white;
           }
 
-          .watch-btn {
-            background-color: $this-red;
-            padding: 10px 30px;
-            transition: 0.2s;
+          .watchlist-btn-box {
+            .watchlist-btn {
+              border: 1px solid #343a40;
+              padding: 6.5px 30px;
+              font-size: 1.2rem;
+              color: black;
+              margin-left: 0;
+              transition: 0.2s;
 
-            &:hover {
-              background-color: $red-btn-hover;
+              &:hover {
+                color: white;
+                background-color: #343a40;
+              }
             }
           }
 
-          .watchlist-btn {
-            border: 1px solid #343a40;
-            padding: 6.5px 30px;
-            font-size: 1.2rem;
-            color: black;
-            margin-left: 2%;
-            transition: 0.2s;
+          .films-theatre-box {
+            width: 100%;
+            background-color: #303030;
+            margin-top: 2.5%;
+            padding: 2.5% 0;
 
-            &:hover {
+            .theatre-heading {
               color: white;
-              background-color: #343a40;
+              font-family: "RobotoSerif";
+              text-align: center;
+            }
+
+            .films-theatre-side {
+              position: relative;
+              padding: 12.5% 0;
+
+              .theatre {
+                display: flex;
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+
+              .cinema-seats {
+                display: flex;
+
+                .seat {
+                  cursor: pointer;
+
+                  &:hover:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.5);
+                    border-radius: 7px;
+                  }
+
+                  //   &.active {
+                  //   }
+
+                  &.active:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.6);
+                    border-radius: 7px;
+                  }
+                }
+              }
+
+              .left {
+                .cinema-row {
+                  transform: skew(-15deg);
+                  margin: 0 6px;
+                }
+
+                .seat {
+                  width: 35px;
+                  height: 50px;
+                  border-radius: 7px;
+                  background: linear-gradient(
+                    to top,
+                    #761818,
+                    #761818,
+                    #761818,
+                    #761818,
+                    #761818,
+                    #b54041,
+                    #f3686a
+                  );
+                  margin-bottom: 10px;
+                  transform: skew(20deg);
+                  margin-top: -32px;
+                  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                }
+
+                .row-2 {
+                  transform: skew(-13deg);
+
+                  .seat {
+                    transform: skew(18deg);
+                  }
+                }
+
+                .row-3 {
+                  transform: skew(-12deg);
+
+                  .seat {
+                    transform: skew(16deg);
+                  }
+                }
+
+                .row-4 {
+                  transform: skew(-11deg);
+
+                  .seat {
+                    transform: skew(15deg);
+                  }
+                }
+
+                .row-5 {
+                  transform: skew(-10deg);
+
+                  .seat {
+                    transform: skew(12deg);
+                  }
+                }
+
+                .row-6 {
+                  transform: skew(-9deg);
+
+                  .seat {
+                    transform: skew(10deg);
+                  }
+                }
+
+                .row-7 {
+                  transform: skew(-7deg);
+
+                  .seat {
+                    transform: skew(8deg);
+                  }
+                }
+              }
+
+              // Left Seats
+              .right {
+                margin-left: 70px;
+
+                .cinema-row {
+                  transform: skew(7deg);
+                  margin: 0 6px;
+                }
+
+                .seat {
+                  width: 35px;
+                  height: 50px;
+                  border-radius: 7px;
+                  background: linear-gradient(
+                    to top,
+                    #761818,
+                    #761818,
+                    #761818,
+                    #761818,
+                    #761818,
+                    #b54041,
+                    #f3686a
+                  );
+                  margin-bottom: 10px;
+                  transform: skew(-8deg);
+                  margin-top: -32px;
+                  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                }
+
+                .row-2 {
+                  transform: skew(9deg);
+
+                  .seat {
+                    transform: skew(-10deg);
+                  }
+                }
+
+                .row-3 {
+                  transform: skew(10deg);
+
+                  .seat {
+                    transform: skew(-12deg);
+                  }
+                }
+
+                .row-4 {
+                  transform: skew(11deg);
+
+                  .seat {
+                    transform: skew(-15deg);
+                  }
+                }
+
+                .row-5 {
+                  transform: skew(12deg);
+
+                  .seat {
+                    transform: skew(-16deg);
+                  }
+                }
+
+                .row-6 {
+                  transform: skew(13deg);
+
+                  .seat {
+                    transform: skew(-18deg);
+                  }
+                }
+
+                .row-7 {
+                  transform: skew(15deg);
+
+                  .seat {
+                    transform: skew(-20deg);
+                  }
+                }
+              }
             }
           }
         }
@@ -219,13 +421,13 @@
   }
 }
 
-#movie-description-comment {
+#show-description-comment {
   padding: 2.5% 0;
   border-top: 1px solid #ededed;
 
-  .movie-description-comment-container {
-    .movie-description-comment-row {
-      .movie-description-comment-col {
+  .show-description-comment-container {
+    .show-description-comment-row {
+      .show-description-comment-col {
         .comment-heading {
           color: black;
           font-family: "Baloo";
@@ -359,20 +561,21 @@
   }
 }
 
-#more-like-these {
+#show-like-these {
   padding: 5% 0;
-  border-bottom: 1px solid $border-color;
-
-  .more-like-these-container {
-    .more-like-these-row {
+  background-color: #1e2129;
+  .show-like-these-container {
+    .show-like-these-row {
       align-items: center;
-      .latest-movies-left-heading-side {
+
+      .latest-tv-show-left-heading-side {
         h2 {
           font-family: "RobotoBold";
+          color: white;
         }
       }
 
-      .latest-movies-right-view-all-side {
+      .latest-tv-show-right-view-all-side {
         @include Flexing(center, flex-end);
 
         a {
@@ -388,17 +591,20 @@
           }
         }
       }
-      .latest-movies-card-col {
+
+      .latest-tv-show-bottom-col {
         margin-top: 2.5%;
 
         .card {
+          background-color: transparent;
+          border: none;
           border-radius: 0;
 
           .img-div {
             position: relative;
             width: 100%;
 
-            .latest-movies-img-box {
+            .latest-tv-show-img-box {
               position: absolute;
               left: 0;
               top: 0;
@@ -410,7 +616,7 @@
                 padding: 3.5% 4% 0;
                 @include Flexing(center, space-between);
 
-                .latest-movies-badge {
+                .latest-tv-show-badge {
                   background-color: #ffd230;
                   padding: 1.5% 2.5%;
                 }
@@ -458,16 +664,17 @@
             }
           }
           .card-body {
-            background-color: #f9fbfd;
-            padding: 5% 7.5%;
+            padding-left: 0;
+            padding-right: 0;
 
             .card-body-about-side {
               @include Flexing(center, space-between);
 
-              a {
+              .card-bottom-left {
                 display: inline-block;
                 font-weight: 600;
-                color: #8f8f8f;
+                color: white;
+                font-size: 0.9rem;
                 transition: 0.2s;
 
                 &:hover {
@@ -475,27 +682,9 @@
                 }
               }
 
-              p {
-                font-family: "Baloo";
-                color: $this-red;
-              }
-            }
-
-            .latest-movies-tags-ul {
-              @include Flexing(center);
-
-              li {
-                a {
-                  display: inline-block;
-                  color: black;
-                  font-family: "Baloo";
-                  font-size: 0.9rem;
-                  font-weight: 600;
-                }
-              }
-
-              li:not(:last-child) {
-                margin-right: 5px;
+              .card-bottom-right {
+                font-size: 0.9rem;
+                color: #bcccda;
               }
             }
           }
