@@ -3074,10 +3074,70 @@ body {
   font-size: 3.5rem;
 }
 
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .specifications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .specifications .specification-item {
   color: white;
-  font-size: 0.8rem;
-  font-family: "RobotoSerif";
+  font-family: "Baloo";
+  font-size: 1.1rem;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .specifications .specification-item:not(:last-child) {
+  margin-right: 2.5%;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .specifications .star-rating {
+  color: #7b7b7b;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .specifications .duration {
+  color: #e41a1a;
+  font-weight: 600;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .specifications .quality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-weight: 600;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .specifications .quality .is-hd {
+  display: inline-block;
+  color: white;
+  border-radius: 4px;
+  background-color: #e41a1a;
+  font-size: 0.9rem;
+  margin-left: 5%;
+  padding: 1.25% 7.5%;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .release-date {
+  color: #7b7b7b;
+  font-family: "Baloo";
+  margin-top: 1%;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .director {
+  font-family: "Baloo";
+  font-weight: 600;
+}
+
+#movie-description .movie-description-container .movie-description-row .films-swiper-col .director span {
+  display: inline-block;
+  color: #e41a1a;
+  font-weight: 400;
 }
 
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .film-types {

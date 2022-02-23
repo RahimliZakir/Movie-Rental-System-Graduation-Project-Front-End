@@ -47,10 +47,58 @@
         }
 
         .specifications {
+          @include Flexing(center);
+
           .specification-item {
             color: white;
-            font-size: 0.8rem;
-            font-family: "RobotoSerif";
+            font-family: "Baloo";
+            font-size: 1.1rem;
+          }
+
+          .specification-item:not(:last-child) {
+            margin-right: 2.5%;
+          }
+
+          .star-rating {
+            color: #7b7b7b;
+          }
+
+          .duration {
+            color: $this-red;
+            font-weight: 600;
+          }
+
+          .quality {
+            @include Flexing(center);
+            color: black;
+            font-weight: 600;
+
+            .is-hd {
+              display: inline-block;
+              color: white;
+              border-radius: 4px;
+              background-color: $this-red;
+              font-size: 0.9rem;
+              margin-left: 5%;
+              padding: 1.25% 7.5%;
+            }
+          }
+        }
+
+        .release-date {
+          color: #7b7b7b;
+          font-family: "Baloo";
+          margin-top: 1%;
+        }
+
+        .director {
+          font-family: "Baloo";
+          font-weight: 600;
+
+          span {
+            display: inline-block;
+            color: $this-red;
+            font-weight: 400;
           }
         }
 
