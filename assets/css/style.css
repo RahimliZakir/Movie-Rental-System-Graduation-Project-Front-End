@@ -4358,4 +4358,17 @@ body {
   font-size: 0.9rem;
   color: #bcccda;
 }
+
+#blog-starter {
+  background-image: url(../images/blog/rows-red-seats-theater.jpg);
+  background-size: cover;
+  padding: 12.5% 0;
+}
+
+#blog-starter .blog-starter-container .blog-starter-row .blog-starter-heading {
+  font-family: "RobotoSerif";
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+}
 /*# sourceMappingURL=style.css.map */
