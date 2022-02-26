@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/sources/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/sources/css/all.min.css" />
     <link rel="stylesheet" href="assets/sources/css/icons.bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/sources/css/select2.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <link
       rel="shortcut icon"
@@ -46,6 +47,7 @@
                 >
               </div>
             </div>
+
             <div class="shopping-cart-filter-tools-side">
               <button class="shopping-cart-filter-movies-btn selected">
                 <i class="bi bi-film"></i> Movies
@@ -54,7 +56,91 @@
                 <i class="bi bi-camera-reels"></i> Shows
               </button>
             </div>
-            
+
+            <div class="row movie-checkout-box-row visible">
+              <div class="col-8 checkout-items-col">
+                <div class="movie-checkout-item">
+                  <div class="img-div">
+                    <img
+                      src="assets/images/movies/ranger.jpg"
+                      alt="Movie Checkout Image"
+                    />
+                  </div>
+                  <div class="name-and-price-side">
+                    <h5 class="name-price-heading">Power Rangers</h5>
+                    <p class="name-price-price">$ 15.00</p>
+                  </div>
+                  <div class="select-for-days">
+                    <select class="select-for-days-select">
+                      <option value="">---Choose---</option>
+                      <option value="OneDay">For 1 Day</option>
+                      <option value="ThreeDays">For 3 Day</option>
+                      <option value="SevenDays">For 7 Day</option>
+                    </select>
+                  </div>
+                  <div class="final-price">
+                    <p class="name-price-price">$ 15.00</p>
+                  </div>
+                  <div class="times-side">
+                    <button class="times-side-btn">
+                      <i class="bi bi-x-circle"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4 total-price-col">
+                <div class="cart_total">
+                  <h6>Cart total</h6>
+                  <ul>
+                    <li>Total: <span>$134.50</span></li>
+                  </ul>
+                  <a style="cursor: pointer; color: white" class="primary-btn"
+                    >Proceed to checkout</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row shows-checkout-box-row">
+              <div class="col-8 checkout-items-col">
+                <div class="movie-checkout-item">
+                  <div class="img-div">
+                    <img
+                      src="assets/images/shows/breaking-bad.jpg"
+                      alt="Shows Checkout Image"
+                    />
+                  </div>
+                  <div class="name-and-price-side">
+                    <h5 class="name-price-heading">Breaking Bad</h5>
+                  </div>
+                  <div class="seats-for-show">
+                    <h5 class="seats-for-show-heading">
+                      2 Seats have selected.
+                    </h5>
+                  </div>
+                  <div class="final-price">
+                    <p class="name-price-price">$ 15.00</p>
+                  </div>
+                  <div class="times-side">
+                    <button class="times-side-btn">
+                      <i class="bi bi-x-circle"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4 total-price-col">
+                <div class="cart_total">
+                  <h6>Cart total</h6>
+                  <ul>
+                    <li>Total: <span>$23.99</span></li>
+                  </ul>
+                  <a style="cursor: pointer; color: white" class="primary-btn"
+                    >Proceed to checkout</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -65,6 +151,7 @@
     <!-- footer end -->
 
     <script src="assets/sources/js/jquery.min.js"></script>
+    <script src="assets/sources/js/select2.min.js"></script>
     <script src="assets/js/shopping-cart.js"></script>
   </body>
 </html>

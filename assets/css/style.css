@@ -5104,4 +5104,188 @@ body {
 #shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-filter-tools-side .shopping-cart-filter-shows-btn.selected {
   border-color: #e41a1a;
 }
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row {
+  display: none;
+  margin-top: 3.5%;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .checkout-items-col .movie-checkout-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #f2f2f2;
+  padding: 1.5% 0;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .checkout-items-col .movie-checkout-item .img-div {
+  width: 25%;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .checkout-items-col .movie-checkout-item .img-div img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .checkout-items-col .movie-checkout-item .name-and-price-side .name-price-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .checkout-items-col .movie-checkout-item .name-and-price-side .name-price-price {
+  color: #e41a1a;
+  font-family: "Baloo";
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .checkout-items-col .movie-checkout-item .final-price .name-price-price {
+  color: #e41a1a;
+  font-family: "Baloo";
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .checkout-items-col .movie-checkout-item .times-side .times-side-btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .total-price-col .cart_total {
+  background: #f3f2ee;
+  padding: 35px 40px 40px;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .total-price-col .cart_total h6 {
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .total-price-col .cart_total ul {
+  margin: 3.5% 0;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .total-price-col .cart_total ul span {
+  color: #e41a1a;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Baloo";
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .movie-checkout-box-row .total-price-col .cart_total .primary-btn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  color: #fff;
+  background: #000;
+  letter-spacing: 4px;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row {
+  display: none;
+  margin-top: 3.5%;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .checkout-items-col .movie-checkout-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #f2f2f2;
+  padding: 1.5% 0;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .checkout-items-col .movie-checkout-item .img-div {
+  width: 25%;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .checkout-items-col .movie-checkout-item .img-div img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .checkout-items-col .movie-checkout-item .name-and-price-side .name-price-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .checkout-items-col .movie-checkout-item .seats-for-show .seats-for-show-heading {
+  font-weight: 600;
+  font-family: "RobotoSerif";
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .checkout-items-col .movie-checkout-item .final-price .name-price-price {
+  color: #e41a1a;
+  font-family: "Baloo";
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .checkout-items-col .movie-checkout-item .times-side .times-side-btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .total-price-col .cart_total {
+  background: #f3f2ee;
+  padding: 35px 40px 40px;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .total-price-col .cart_total h6 {
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .total-price-col .cart_total ul {
+  margin: 3.5% 0;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .total-price-col .cart_total ul span {
+  color: #e41a1a;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Baloo";
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shows-checkout-box-row .total-price-col .cart_total .primary-btn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  color: #fff;
+  background: #000;
+  letter-spacing: 4px;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=style.css.map */
