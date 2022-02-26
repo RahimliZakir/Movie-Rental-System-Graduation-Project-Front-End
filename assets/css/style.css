@@ -4053,6 +4053,29 @@ body {
           transform: skew(-20deg);
 }
 
+#show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .add-to-basket-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 5%;
+}
+
+#show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .add-to-basket-side .add-to-basket-btn {
+  display: inline-block;
+  background-color: #ffd32a;
+  border-radius: 4px;
+  padding: 12.5px 27.5px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 #show-description-comment {
   padding: 2.5% 0;
   border-top: 1px solid #ededed;
@@ -4360,7 +4383,7 @@ body {
 }
 
 #blog-starter {
-  background-image: url(../images/blog/rows-red-seats-theater.jpg);
+  background-image: url(../images/common/rows-red-seats-theater.jpg);
   background-size: cover;
   padding: 12.5% 0;
 }
@@ -4439,7 +4462,7 @@ body {
 }
 
 #blog-description-starter {
-  background-image: url(../images/blog-details/rows-red-seats-theater-desc.jpg);
+  background-image: url(../images/common/rows-red-seats-theater.jpg);
   background-size: cover;
   padding: 12.5% 0;
 }
@@ -4503,6 +4526,7 @@ body {
 #blog-description-comment {
   padding: 2.5% 0;
   border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
 }
 
 #blog-description-comment .blog-description-comment-container .blog-description-comment-row .blog-description-comment-col .comment-heading {
@@ -4631,5 +4655,348 @@ body {
 
 #blog-description-comment .blog-description-comment-container .blog-description-comment-row .movie-details-replies .written-comment.reply {
   padding-left: 7.5%;
+}
+
+#wishlist-banner {
+  background-image: url(../images/common/rows-red-seats-theater.jpg);
+  background-size: cover;
+  padding: 12.5% 0;
+}
+
+#wishlist-banner .wishlist-banner-container .wishlist-banner-row .wishlist-banner-heading {
+  font-family: "RobotoSerif";
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+#wishlist {
+  padding: 4.5% 0;
+  border-bottom: 1px solid #ededed;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-filter-tools-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-filter-tools-side .wishlist-filter-movies-btn {
+  margin-right: 0.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-filter-tools-side .wishlist-filter-movies-btn,
+#wishlist .wishlist-container .wishlist-row .wishlist-filter-tools-side .wishlist-filter-shows-btn {
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px;
+  color: #e41a1a;
+  border: 2px solid #ededed;
+  padding: 8.5px 14.5px;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-filter-tools-side .wishlist-filter-movies-btn.selected,
+#wishlist .wishlist-container .wishlist-row .wishlist-filter-tools-side .wishlist-filter-shows-btn.selected {
+  border-color: #e41a1a;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row {
+  display: none;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col {
+  margin-top: 2.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card {
+  border-radius: 0;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div {
+  position: relative;
+  width: 100%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div .latest-movies-img-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-top {
+  padding: 3.5% 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-top .latest-movies-badge {
+  background-color: #ffd230;
+  padding: 1.5% 2.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-top p {
+  color: white;
+  font-family: "Baloo";
+  font-size: 0.8rem;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-bottom {
+  padding: 0 4% 3.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-bottom ul li a {
+  display: inline-block;
+  color: white;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div .latest-movies-img-box .img-box-bottom ul li:not(:last-child) {
+  margin-right: 3.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .img-div:hover img {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .card-body {
+  background-color: #f9fbfd;
+  padding: 5% 7.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .card-body .card-body-about-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .card-body .card-body-about-side a {
+  display: inline-block;
+  font-weight: 600;
+  color: #8f8f8f;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .card-body .card-body-about-side a:hover {
+  color: #e41a1a;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .card-body .card-body-about-side p {
+  font-family: "Baloo";
+  color: #e41a1a;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .card-body .latest-movies-tags-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .card-body .latest-movies-tags-ul li a {
+  display: inline-block;
+  color: black;
+  font-family: "Baloo";
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-movies-row .latest-movies-card-col .card .card-body .latest-movies-tags-ul li:not(:last-child) {
+  margin-right: 5px;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row {
+  display: none;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col {
+  margin-top: 2.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card {
+  background-color: #303030;
+  border: none;
+  border-radius: 0;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div {
+  position: relative;
+  width: 100%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-top {
+  padding: 3.5% 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-top .latest-tv-show-badge {
+  background-color: #ffd230;
+  padding: 1.5% 2.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-top p {
+  color: white;
+  font-family: "Baloo";
+  font-size: 0.8rem;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-bottom {
+  padding: 0 4% 3.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-bottom ul li a {
+  display: inline-block;
+  color: white;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div .latest-tv-show-img-box .img-box-bottom ul li:not(:last-child) {
+  margin-right: 3.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .img-div:hover img {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .card-body {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .card-body .card-body-about-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .card-body .card-body-about-side .card-bottom-left {
+  display: inline-block;
+  font-weight: 600;
+  color: white;
+  font-size: 0.9rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .card-body .card-body-about-side .card-bottom-left:hover {
+  color: #e41a1a;
+}
+
+#wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card .card-body .card-body-about-side .card-bottom-right {
+  font-size: 0.9rem;
+  color: #bcccda;
+}
+
+#wishlist .wishlist-container .wishlist-row .visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

@@ -414,6 +414,21 @@
                 }
               }
             }
+
+            .add-to-basket-side {
+              @include Flexing(center, flex-end);
+              padding-right: 5%;
+
+              .add-to-basket-btn {
+                display: inline-block;
+                background-color: #ffd32a;
+                border-radius: 4px;
+                padding: 12.5px 27.5px;
+                border: none;
+                font-size: 0.9rem;
+                font-weight: 600;
+              }
+            }
           }
         }
       }
