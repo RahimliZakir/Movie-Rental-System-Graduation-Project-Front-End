@@ -23,8 +23,53 @@
     .blogs-row {
       .blogs-col {
         .blogs-card {
+          margin-bottom: 3.5%;
+
+          img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+          }
+
           .card-body {
             text-align: center;
+
+            .card-title {
+              font-weight: 600;
+            }
+
+            .card-text {
+              margin-bottom: 2.5%;
+            }
+
+            .card-like-unlike-side {
+              @include Flexing(center, center);
+              margin: 2.5% 0;
+
+              .like-side,
+              .unlike-side {
+                i {
+                  display: inline-block;
+                  cursor: pointer;
+                  transition: 0.3s;
+
+                  &:hover {
+                    color: $this-red;
+                  }
+                }
+              }
+
+              .unlike-side {
+                margin-left: 3.75%;
+              }
+            }
+
+            .details-btn {
+              display: inline-block;
+              background-color: $this-red;
+              border: none;
+              box-shadow: none;
+            }
           }
         }
       }
