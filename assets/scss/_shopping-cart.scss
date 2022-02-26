@@ -1,0 +1,98 @@
+#shopping-cart-banner {
+  background-image: url(../images/common/rows-red-seats-theater.jpg);
+  background-size: cover;
+  padding: 12.5% 0;
+
+  .shopping-cart-banner-container {
+    .shopping-cart-banner-row {
+      .shopping-cart-banner-heading {
+        font-family: "RobotoSerif";
+        color: white;
+        text-align: center;
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+#shopping-cart {
+  padding: 5% 0;
+  border-bottom: 1px solid #e2e2e2;
+
+  .shopping-cart-container {
+    .shopping-cart-row {
+      .shopping-cart-col {
+        .shopping-cart-empty-side-row {
+          align-items: center;
+          padding: 3.5% 2.5%;
+          border-radius: 4px;
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+
+          .shopping-empty-left-side {
+            @include Flexing(center);
+
+            .empty-basket-desc {
+              font-weight: 600;
+              font-family: "Baloo";
+              font-size: 1.4rem;
+              margin-left: 1.5%;
+            }
+
+            .basket-span {
+              display: inline-block;
+              width: 75px;
+              height: 75px;
+              font-size: 2.2rem;
+              line-height: 75px;
+              text-align: center;
+              border-radius: 50%;
+              color: $this-red;
+              background: linear-gradient(
+                90deg,
+                rgba(252, 92, 101, 1) 0%,
+                rgba(252, 92, 101, 0.35384576193758754) 0%
+              );
+            }
+          }
+
+          .shopping-empty-right-side {
+            text-align: right;
+
+            .empty-basket-redirect-btn {
+              background-color: $this-red;
+              color: #fff;
+              border-radius: 6px;
+              font-weight: 600;
+              padding: 14.5px 23.5px;
+              text-align: center;
+              transition: all 0.2s ease;
+            }
+          }
+        }
+
+        .shopping-cart-filter-tools-side {
+          margin-top: 3.5%; 
+          @include Flexing(center, center);
+
+          .shopping-cart-filter-movies-btn {
+            margin-right: 0.5%;
+          }
+
+          .shopping-cart-filter-movies-btn,
+          .shopping-cart-filter-shows-btn {
+            display: inline-block;
+            background-color: white;
+            border-radius: 5px;
+            color: $this-red;
+            border: 2px solid #ededed;
+            padding: 8.5px 14.5px;
+
+            &.selected {
+              border-color: $this-red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

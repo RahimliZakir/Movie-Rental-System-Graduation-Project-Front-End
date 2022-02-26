@@ -5000,4 +5000,108 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
+#shopping-cart-banner {
+  background-image: url(../images/common/rows-red-seats-theater.jpg);
+  background-size: cover;
+  padding: 12.5% 0;
+}
+
+#shopping-cart-banner .shopping-cart-banner-container .shopping-cart-banner-row .shopping-cart-banner-heading {
+  font-family: "RobotoSerif";
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+#shopping-cart {
+  padding: 5% 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-empty-side-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.5% 2.5%;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-empty-side-row .shopping-empty-left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-empty-side-row .shopping-empty-left-side .empty-basket-desc {
+  font-weight: 600;
+  font-family: "Baloo";
+  font-size: 1.4rem;
+  margin-left: 1.5%;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-empty-side-row .shopping-empty-left-side .basket-span {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  font-size: 2.2rem;
+  line-height: 75px;
+  text-align: center;
+  border-radius: 50%;
+  color: #e41a1a;
+  background: -webkit-gradient(linear, left top, right top, from(#fc5c65), color-stop(0%, rgba(252, 92, 101, 0.353846)));
+  background: linear-gradient(90deg, #fc5c65 0%, rgba(252, 92, 101, 0.353846) 0%);
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-empty-side-row .shopping-empty-right-side {
+  text-align: right;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-empty-side-row .shopping-empty-right-side .empty-basket-redirect-btn {
+  background-color: #e41a1a;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 14.5px 23.5px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-filter-tools-side {
+  margin-top: 3.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-filter-tools-side .shopping-cart-filter-movies-btn {
+  margin-right: 0.5%;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-filter-tools-side .shopping-cart-filter-movies-btn,
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-filter-tools-side .shopping-cart-filter-shows-btn {
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px;
+  color: #e41a1a;
+  border: 2px solid #ededed;
+  padding: 8.5px 14.5px;
+}
+
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-filter-tools-side .shopping-cart-filter-movies-btn.selected,
+#shopping-cart .shopping-cart-container .shopping-cart-row .shopping-cart-col .shopping-cart-filter-tools-side .shopping-cart-filter-shows-btn.selected {
+  border-color: #e41a1a;
+}
 /*# sourceMappingURL=style.css.map */
