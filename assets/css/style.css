@@ -4868,6 +4868,7 @@ body {
 }
 
 #wishlist .wishlist-container .wishlist-row .wishlist-shows-row .latest-tv-show-bottom-col .card {
+  position: relative;
   background-color: #303030;
   border: none;
   border-radius: 0;
