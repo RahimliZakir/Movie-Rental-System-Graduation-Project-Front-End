@@ -4437,4 +4437,199 @@ body {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+#blog-description-starter {
+  background-image: url(../images/blog-details/rows-red-seats-theater-desc.jpg);
+  background-size: cover;
+  padding: 12.5% 0;
+}
+
+#blog-description-starter .blog-description-starter-container .blog-description-starter-row .blog-description-starter-heading {
+  font-family: "RobotoSerif";
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+#blog-description {
+  padding: 5% 0;
+}
+
+#blog-description .blog-description-container .blog-description-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#blog-description .blog-description-container .blog-description-row .blog-description-col {
+  padding: 2.5%;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+#blog-description .blog-description-container .blog-description-row .blog-description-col .blog-description-heading {
+  font-weight: 600;
+  margin-bottom: 3.5%;
+  text-align: center;
+}
+
+#blog-description .blog-description-container .blog-description-row .blog-description-col .blog-main-img-side {
+  background-image: url(../images/blog-details/8728.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+
+#blog-description .blog-description-container .blog-description-row .blog-description-col .blog-description-content {
+  margin-top: 3.5%;
+  font-family: "Baloo";
+}
+
+#blog-description .blog-description-container .blog-description-row .blog-description-col .blog-description-second-heading {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#blog-description .blog-description-container .blog-description-row .blog-description-col .blog-description-swiper .swiper-slide img {
+  height: 325px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+#blog-description-comment {
+  padding: 2.5% 0;
+  border-top: 1px solid #ededed;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .blog-description-comment-col .comment-heading {
+  color: black;
+  font-family: "Baloo";
+  font-weight: 600;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .blog-description-comment-col .comment-helper-text {
+  color: #7b7b7b;
+  font-family: "Baloo";
+  margin-bottom: 1%;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .blog-description-comment-col #blog-description-comment-form .star-rating-div {
+  margin-bottom: 1.5%;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .blog-description-comment-col #blog-description-comment-form .star-rating-div i {
+  color: #f0932b;
+  cursor: pointer;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .blog-description-comment-col #blog-description-comment-form .form-group .movie-description-textarea {
+  border-radius: 0;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .blog-description-comment-col #blog-description-comment-form .form-group #movie-details-spoiler + label {
+  font-family: "Baloo";
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .blog-description-comment-col #blog-description-comment-form .comment-btn-side button {
+  display: inline-block;
+  background-color: #e41a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 7.5px 25px;
+  font-family: "Baloo";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .blog-description-comment-col #blog-description-comment-form .comment-btn-side button:hover {
+  background-color: #d93535;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col {
+  padding-left: 5%;
+  padding-right: 2.5%;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment {
+  margin-top: 2.5%;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div {
+  width: 60%;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side {
+  position: relative;
+  background-color: #343946;
+  border-radius: 4px;
+  padding: 1.5% 1%;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #343946;
+  border-bottom: 5px solid transparent;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-content-heading,
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-content-content {
+  font-family: "Baloo";
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-content-heading {
+  color: #777777;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-content-content {
+  color: white;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-bottom-box {
+  margin-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-bottom-box .reply-btn,
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-bottom-box .comment-date {
+  color: #777777;
+  font-size: 0.9rem;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-bottom-box .reply-btn {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-content-side .written-comment-bottom-box .reply-btn:hover {
+  color: #e41a1a;
+  text-decoration: underline;
+}
+
+#blog-description-comment .blog-description-comment-container .blog-description-comment-row .movie-details-replies .written-comment.reply {
+  padding-left: 7.5%;
+}
 /*# sourceMappingURL=style.css.map */
