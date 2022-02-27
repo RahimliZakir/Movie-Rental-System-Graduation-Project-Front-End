@@ -60,12 +60,10 @@ $(function () {
   $(emailInput).on("keyup", function (e) {
     if ($(emailInput).val() == "") {
       $(emailInput).next(".error-text").addClass("error-active");
+    } else if (pattern.test($(emailInput).val()) == false) {
+      $(emailInput).next(".error-text").addClass("error-active");
     } else {
-      if (pattern.test($(emailInput).val())) {
-        $(emailInput).next(".error-text").removeClass("error-active");
-      } else {
-        $(emailInput).next(".error-text").addClass("error-active");
-      }
+      $(emailInput).next(".error-text").removeClass("error-active");
     }
   });
 
