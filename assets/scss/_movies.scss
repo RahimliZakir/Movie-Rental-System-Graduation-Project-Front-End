@@ -173,21 +173,32 @@
               }
             }
 
-            .latest-movies-tags-ul {
-              @include Flexing(center);
+            .latest-movies-genre-price-side {
+              @include Flexing(center, space-between);
 
-              li {
-                a {
-                  display: inline-block;
-                  color: black;
-                  font-family: "Baloo";
-                  font-size: 0.9rem;
-                  font-weight: 600;
+              .latest-movies-tags-ul {
+                @include Flexing(center);
+
+                li {
+                  a {
+                    display: inline-block;
+                    color: black;
+                    font-family: "Baloo";
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                  }
+                }
+
+                li:not(:last-child) {
+                  margin-right: 5px;
                 }
               }
 
-              li:not(:last-child) {
-                margin-right: 5px;
+              .latest-movies-price {
+                color: $this-red;
+                font-weight: 600;
+                font-family: "Baloo";
+                margin: 0;
               }
             }
           }

@@ -177,6 +177,17 @@
                 color: #bcccda;
               }
             }
+
+            .shows-start-price {
+              font-family: "RobotoSerif";
+              color: #ffffff;
+              text-align: center;
+              margin-top: 1.5%;
+
+              span {
+                color: $this-red;
+              }
+            }
           }
         }
       }

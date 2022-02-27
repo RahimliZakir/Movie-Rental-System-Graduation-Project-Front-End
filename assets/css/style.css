@@ -1816,7 +1816,19 @@ footer #copyright .copyright-container .copyright-content {
   color: #e41a1a;
 }
 
-#latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col .card .card-body .latest-movies-tags-ul {
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col .card .card-body .latest-movies-genre-price-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col .card .card-body .latest-movies-genre-price-side .latest-movies-tags-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1825,7 +1837,7 @@ footer #copyright .copyright-container .copyright-content {
           align-items: center;
 }
 
-#latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col .card .card-body .latest-movies-tags-ul li a {
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col .card .card-body .latest-movies-genre-price-side .latest-movies-tags-ul li a {
   display: inline-block;
   color: black;
   font-family: "Baloo";
@@ -1833,8 +1845,15 @@ footer #copyright .copyright-container .copyright-content {
   font-weight: 600;
 }
 
-#latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col .card .card-body .latest-movies-tags-ul li:not(:last-child) {
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col .card .card-body .latest-movies-genre-price-side .latest-movies-tags-ul li:not(:last-child) {
   margin-right: 5px;
+}
+
+#latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col .card .card-body .latest-movies-genre-price-side .latest-movies-price {
+  color: #e41a1a;
+  font-weight: 600;
+  font-family: "Baloo";
+  margin: 0;
 }
 
 #shows-cards-animation {
@@ -2059,6 +2078,17 @@ footer #copyright .copyright-container .copyright-content {
 #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .card-body .card-body-about-side .card-bottom-right {
   font-size: 0.9rem;
   color: #bcccda;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .card-body .shows-start-price {
+  font-family: "RobotoSerif";
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1.5%;
+}
+
+#latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .card-body .shows-start-price span {
+  color: #e41a1a;
 }
 
 #contactus-cards-animation {
