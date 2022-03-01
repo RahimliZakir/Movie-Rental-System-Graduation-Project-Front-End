@@ -63,6 +63,24 @@ a {
   position: absolute;
 }
 
+@-webkit-keyframes MoveBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -3000px;
+  }
+}
+
+@keyframes MoveBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -3000px;
+  }
+}
+
 header nav {
   position: absolute;
   z-index: 100;
@@ -1383,24 +1401,6 @@ footer #copyright .copyright-container .copyright-content {
   font-weight: 600;
   font-size: 4.4rem;
   color: white;
-}
-
-@-webkit-keyframes MoveBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 0 -3000px;
-  }
-}
-
-@keyframes MoveBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 0 -3000px;
-  }
 }
 
 #faq {
