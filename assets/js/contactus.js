@@ -4,7 +4,6 @@ $(function () {
 
   let contactFormCols = $("#contact-side-form>[class*='col']");
   let contactFormLabels = $(contactFormCols).find("label");
-  let contactFormElements = $(contactFormCols).find("input,textarea,select");
   let contactBtn = $(".button-col>button");
 
   $.each(contactFormLabels, (index, item) => {
@@ -95,13 +94,24 @@ $(function () {
     }
   });
 
-  $(document.body).on("keyup", function () {
-    $.each(contactFormElements, (index, item) => {
-      if ($(item).next(".error-text").hasClass("error-active")) {
-        $(contactBtn).addClass("disable");
-      } else {
-        $(contactBtn).removeClass("disable");
-      }
-    });
+  $(document.body).on("keyup change", () => {
+    if (
+      $(firstnameInput).val() != "" &&
+      !$(firstnameInput).next(".error-text").hasClass("error-active") &&
+      $(lastnameInput).val() != "" &&
+      !$(lastnameInput).next(".error-text").hasClass("error-active") &&
+      $(emailInput).val() != "" &&
+      !$(emailInput).next(".error-text").hasClass("error-active") &&
+      $(needSelect).val() != "" &&
+      !$(needSelect).next(".error-text").hasClass("error-active") &&
+      $(messsageTextarea).val() != "" &&
+      !$(messsageTextarea).next(".error-text").hasClass("error-active")
+    ) {
+      $(contactBtn).removeClass("disabled");
+      $(contactBtn).attr("disabled", false);
+    } else {
+      $(contactBtn).addClass("disabled");
+      $(contactBtn).attr("disabled", true);
+    }
   });
 });
