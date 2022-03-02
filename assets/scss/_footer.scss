@@ -3,6 +3,10 @@ footer {
     padding: 5% 0;
     border-bottom: 1px solid $border-color;
 
+    @include MediaRespond("tel") {
+      padding: 15% 0 !important;
+    }
+
     .shortcut-paths-container {
       .shortcut-paths-row {
         .connect-side {

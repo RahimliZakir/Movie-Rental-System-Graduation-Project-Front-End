@@ -237,6 +237,12 @@ footer #shortcut-paths {
   border-bottom: 1px solid #dee2e6;
 }
 
+@media (max-width: 576px) {
+  footer #shortcut-paths {
+    padding: 15% 0 !important;
+  }
+}
+
 footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .connect-side .connect-logo {
   display: inline-block;
   color: black;
@@ -410,6 +416,13 @@ footer #copyright .copyright-container .copyright-content {
   padding: 15% 0;
 }
 
+@media (max-width: 576px) {
+  #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item {
+    padding: 35% 0;
+    height: 100vh;
+  }
+}
+
 #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .films-swiper-badge {
   background-color: #ffd230;
   padding: 0.5% 1%;
@@ -420,6 +433,12 @@ footer #copyright .copyright-container .copyright-content {
   font-family: "Baloo";
   font-weight: 600;
   font-size: 4.8rem;
+}
+
+@media (max-width: 576px) {
+  #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts {
+    margin-bottom: 3.5%;
+  }
 }
 
 #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .casts .casts-heading {
@@ -443,6 +462,12 @@ footer #copyright .copyright-container .copyright-content {
           align-items: center;
 }
 
+@media (max-width: 576px) {
+  #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-types {
+    margin-bottom: 3.5%;
+  }
+}
+
 #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-types .film-type {
   color: white;
 }
@@ -464,6 +489,12 @@ footer #copyright .copyright-container .copyright-content {
   color: white;
   font-family: "Baloo";
   padding-right: 22.5%;
+}
+
+@media (max-width: 576px) {
+  #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-description {
+    margin-bottom: 3.5%;
+  }
 }
 
 #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .films-swiper-buttons-box {
@@ -518,7 +549,7 @@ footer #copyright .copyright-container .copyright-content {
 
 #top-categories {
   background-color: #1e2129;
-  padding: 5% 0;
+  padding: 10% 0;
 }
 
 #top-categories .top-categories-container .top-categories-row .top-categories-left-side .top-categories-lil-heading {
@@ -536,7 +567,7 @@ footer #copyright .copyright-container .copyright-content {
   color: white;
   font-family: "Baloo";
   padding-right: 9.5%;
-  margin: 2.5% 0;
+  margin: 2.5% 0 4.5%;
 }
 
 #top-categories .top-categories-container .top-categories-row .top-categories-left-side .top-categories-btn {
@@ -545,6 +576,7 @@ footer #copyright .copyright-container .copyright-content {
   border: 1px solid #e41a1a;
   border-radius: 5px;
   padding: 7.5px 12.5px;
+  margin-bottom: 4.5%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -576,13 +608,37 @@ footer #copyright .copyright-container .copyright-content {
   font-weight: 600;
 }
 
+@media (max-width: 576px) {
+  #top-categories .top-categories-container .top-categories-row .top-categories-right-side .top-categories-cards-row .top-categories-cards-col {
+    margin-bottom: 2.5%;
+  }
+  #top-categories .top-categories-container .top-categories-row .top-categories-right-side .top-categories-cards-row .top-categories-cards-col .img-div {
+    position: static;
+  }
+  #top-categories .top-categories-container .top-categories-row .top-categories-right-side .top-categories-cards-row .top-categories-cards-col .img-div span {
+    position: static;
+  }
+}
+
 #top-categories .top-categories-container .top-categories-row .top-categories-right-side .top-categories-cards-row .top-categories-cards-col:nth-child(even) {
   position: relative;
   top: 17.5px;
 }
 
+@media (max-width: 576px) {
+  #top-categories .top-categories-container .top-categories-row .top-categories-right-side .top-categories-cards-row .top-categories-cards-col:nth-child(even) {
+    position: static;
+  }
+}
+
 #latest-movies {
   padding: 3.5% 0;
+}
+
+@media (max-width: 576px) {
+  #latest-movies {
+    padding: 10% 0 !important;
+  }
 }
 
 #latest-movies .latest-movies-container .latest-movies-row {
@@ -593,6 +649,12 @@ footer #copyright .copyright-container .copyright-content {
 
 #latest-movies .latest-movies-container .latest-movies-row .latest-movies-left-heading-side h2 {
   font-family: "RobotoBold";
+}
+
+@media (max-width: 576px) {
+  #latest-movies .latest-movies-container .latest-movies-row .latest-movies-left-heading-side h2 {
+    margin-bottom: 0;
+  }
 }
 
 #latest-movies .latest-movies-container .latest-movies-row .latest-movies-right-view-all-side {
@@ -623,6 +685,12 @@ footer #copyright .copyright-container .copyright-content {
 
 #latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side {
   margin-top: 3.5%;
+}
+
+@media (max-width: 576px) {
+  #latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side {
+    margin-top: 8.75%;
+  }
 }
 
 #latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card {
@@ -768,6 +836,23 @@ footer #copyright .copyright-container .copyright-content {
   font-weight: 600;
 }
 
+@media (max-width: 576px) {
+  #latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .card-body .latest-movies-tags-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .item .card .card-body .latest-movies-tags-ul li:not(:last-child) {
+    margin-right: 1.5%;
+  }
+}
+
 #latest-movies .latest-movies-container .latest-movies-row .latest-movies-carousel-side .latest-movies-carousel .owl-dots {
   margin-top: 2.5%;
 }
@@ -779,6 +864,18 @@ footer #copyright .copyright-container .copyright-content {
 #latest-tv-show-start {
   padding: 3.5% 0;
   background-color: #1e2129;
+}
+
+@media (max-width: 576px) {
+  #latest-tv-show-start {
+    padding: 10% 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-top-left-side {
+    margin-bottom: 7.5%;
+  }
 }
 
 #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-top-left-side h6 {
@@ -1074,9 +1171,27 @@ footer #copyright .copyright-container .copyright-content {
   background-color: #e2e2e2;
 }
 
+@media (max-width: 576px) {
+  #trailer {
+    padding: 10% 0;
+  }
+}
+
+#trailer .trailer-container .trailer-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #trailer .trailer-container .trailer-row .trailer-left-side h2 {
   font-family: "RobotoBold";
   font-size: 2.4rem;
+}
+
+@media (max-width: 576px) {
+  #trailer .trailer-container .trailer-row .trailer-left-side h2 {
+    margin-bottom: 0;
+  }
 }
 
 #trailer .trailer-container .trailer-row .trailer-right-side {
@@ -1103,6 +1218,16 @@ footer #copyright .copyright-container .copyright-content {
 
 #trailer .trailer-container .trailer-row .trailer-right-side a:hover {
   background-color: #c82333;
+}
+
+@media (max-width: 576px) {
+  #trailer .trailer-container .trailer-row .trailer-right-side a {
+    padding: 5px 15px;
+    text-align: center;
+  }
+  #trailer .trailer-container .trailer-row .trailer-right-side a span {
+    display: block;
+  }
 }
 
 #trailer .trailer-container .trailer-row .trailer-bottom-cards-col {
@@ -1181,6 +1306,12 @@ footer #copyright .copyright-container .copyright-content {
   padding: 3.5% 0;
 }
 
+@media (max-width: 576px) {
+  #recent-movies {
+    padding: 7.5% 0;
+  }
+}
+
 #recent-movies .recent-movies-container .recent-movies-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1190,6 +1321,12 @@ footer #copyright .copyright-container .copyright-content {
 #recent-movies .recent-movies-container .recent-movies-row .recent-movies-left-side h2 {
   font-family: "RobotoBold";
   font-size: 2.4rem;
+}
+
+@media (max-width: 576px) {
+  #recent-movies .recent-movies-container .recent-movies-row .recent-movies-left-side h2 {
+    margin-bottom: 0;
+  }
 }
 
 #recent-movies .recent-movies-container .recent-movies-row .recent-movies-right-side {
@@ -1202,6 +1339,18 @@ footer #copyright .copyright-container .copyright-content {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 576px) {
+  #recent-movies .recent-movies-container .recent-movies-row .recent-movies-right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #recent-movies .recent-movies-container .recent-movies-row .recent-movies-right-side button {
@@ -1230,6 +1379,12 @@ footer #copyright .copyright-container .copyright-content {
 
 #recent-movies .recent-movies-container .recent-movies-row .recent-movies-cards-col {
   margin-top: 3.5%;
+}
+
+@media (max-width: 576px) {
+  #recent-movies .recent-movies-container .recent-movies-row .recent-movies-cards-col {
+    margin-top: 10%;
+  }
 }
 
 #recent-movies .recent-movies-container .recent-movies-row .recent-movies-cards-col .card {
@@ -1359,6 +1514,13 @@ footer #copyright .copyright-container .copyright-content {
   padding: 5% 0;
 }
 
+@media (max-width: 576px) {
+  #selected-movie {
+    padding: 10% 0;
+    background-position: 0;
+  }
+}
+
 #selected-movie .selected-movie-container .selected-movie-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1414,6 +1576,12 @@ footer #copyright .copyright-container .copyright-content {
   font-family: "Baloo";
   padding-right: 22.5%;
   margin-top: 1.5%;
+}
+
+@media (max-width: 576px) {
+  #selected-movie .selected-movie-container .selected-movie-row .selected-movie-left-side .film-description {
+    padding-right: 10.5%;
+  }
 }
 
 #selected-movie .selected-movie-container .selected-movie-row .selected-movie-left-side .selected-movie-buttons-box {

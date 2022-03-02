@@ -5,6 +5,12 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: 15% 0;
+
+        @include MediaRespond("tel") {
+          padding: 35% 0;
+          height: 100vh;
+        }
+
         .films-swiper-container {
           .films-swiper-row {
             .films-swiper-col {
@@ -21,6 +27,10 @@
               }
 
               .casts {
+                @include MediaRespond("tel") {
+                  margin-bottom: 3.5%;
+                }
+
                 .casts-heading {
                   font-weight: 600;
                   color: white;
@@ -36,6 +46,10 @@
 
               .film-types {
                 @include Flexing(center);
+
+                @include MediaRespond("tel") {
+                  margin-bottom: 3.5%;
+                }
 
                 .film-type {
                   color: white;
@@ -59,6 +73,10 @@
                 color: white;
                 font-family: "Baloo";
                 padding-right: 22.5%;
+
+                @include MediaRespond("tel") {
+                  margin-bottom: 3.5%;
+                }
               }
 
               .films-swiper-buttons-box {
@@ -114,7 +132,7 @@
 
 #top-categories {
   background-color: #1e2129;
-  padding: 5% 0;
+  padding: 10% 0;
   .top-categories-container {
     .top-categories-row {
       .top-categories-left-side {
@@ -133,7 +151,7 @@
           color: white;
           font-family: "Baloo";
           padding-right: 9.5%;
-          margin: 2.5% 0;
+          margin: 2.5% 0 4.5%;
         }
 
         .top-categories-btn {
@@ -142,6 +160,7 @@
           border: 1px solid $this-red;
           border-radius: 5px;
           padding: 7.5px 12.5px;
+          margin-bottom: 4.5%;
           transition: 0.3s;
         }
 
@@ -171,11 +190,27 @@
                 font-weight: 600;
               }
             }
+
+            @include MediaRespond("tel") {
+              margin-bottom: 2.5%;
+
+              .img-div {
+                position: static;
+
+                span {
+                  position: static;
+                }
+              }
+            }
           }
 
           .top-categories-cards-col:nth-child(even) {
             position: relative;
             top: 17.5px;
+
+            @include MediaRespond("tel") {
+              position: static;
+            }
           }
         }
       }
@@ -186,12 +221,20 @@
 #latest-movies {
   padding: 3.5% 0;
 
+  @include MediaRespond("tel") {
+    padding: 10% 0 !important;
+  }
+
   .latest-movies-container {
     .latest-movies-row {
       align-items: center;
       .latest-movies-left-heading-side {
         h2 {
           font-family: "RobotoBold";
+
+          @include MediaRespond("tel") {
+            margin-bottom: 0;
+          }
         }
       }
 
@@ -214,6 +257,10 @@
 
       .latest-movies-carousel-side {
         margin-top: 3.5%;
+
+        @include MediaRespond("tel") {
+          margin-top: 8.75%;
+        }
 
         .latest-movies-carousel {
           .item {
@@ -318,6 +365,14 @@
                       font-weight: 600;
                     }
                   }
+
+                  @include MediaRespond("tel") {
+                    @include Flexing(center, flex-start);
+
+                    li:not(:last-child) {
+                      margin-right: 1.5%;
+                    }
+                  }
                 }
               }
             }
@@ -340,9 +395,18 @@
 #latest-tv-show-start {
   padding: 3.5% 0;
   background-color: #1e2129;
+
+  @include MediaRespond("tel") {
+    padding: 10% 0 !important;
+  }
+
   .latest-tv-show-start-container {
     .latest-tv-show-start-row {
       .latest-tv-show-top-left-side {
+        @include MediaRespond("tel") {
+          margin-bottom: 7.5%;
+        }
+
         h6 {
           color: $this-red;
         }
@@ -580,12 +644,22 @@
   padding: 4% 0;
   background-color: #e2e2e2;
 
+  @include MediaRespond("tel") {
+    padding: 10% 0;
+  }
+
   .trailer-container {
     .trailer-row {
+      align-items: center;
+
       .trailer-left-side {
         h2 {
           font-family: "RobotoBold";
           font-size: 2.4rem;
+
+          @include MediaRespond("tel") {
+            margin-bottom: 0;
+          }
         }
       }
 
@@ -602,6 +676,15 @@
 
           &:hover {
             background-color: #c82333;
+          }
+
+          @include MediaRespond("tel") {
+            padding: 5px 15px;
+            text-align: center;
+
+            span {
+              display: block;
+            }
           }
         }
       }
@@ -670,6 +753,10 @@
 #recent-movies {
   padding: 3.5% 0;
 
+  @include MediaRespond("tel") {
+    padding: 7.5% 0;
+  }
+
   .recent-movies-container {
     .recent-movies-row {
       align-items: center;
@@ -678,11 +765,19 @@
         h2 {
           font-family: "RobotoBold";
           font-size: 2.4rem;
+
+          @include MediaRespond("tel") {
+            margin-bottom: 0;
+          }
         }
       }
 
       .recent-movies-right-side {
         @include Flexing(center, flex-end);
+
+        @include MediaRespond("tel") {
+          @include Flexing(null, null, column);
+        }
 
         button {
           border: none;
@@ -710,6 +805,10 @@
 
       .recent-movies-cards-col {
         margin-top: 3.5%;
+
+        @include MediaRespond("tel") {
+          margin-top: 10%;
+        }
 
         .card {
           background-color: transparent;
@@ -810,6 +909,11 @@
   background-attachment: fixed;
   padding: 5% 0;
 
+  @include MediaRespond("tel") {
+    padding: 10% 0;
+    background-position: 0;
+  }
+
   .selected-movie-container {
     .selected-movie-row {
       align-items: center;
@@ -863,6 +967,10 @@
           font-family: "Baloo";
           padding-right: 22.5%;
           margin-top: 1.5%;
+
+          @include MediaRespond("tel") {
+            padding-right: 10.5%;
+          }
         }
 
         .selected-movie-buttons-box {
