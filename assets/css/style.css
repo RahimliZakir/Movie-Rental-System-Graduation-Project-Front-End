@@ -91,6 +91,12 @@ header nav {
   border-bottom: 1px solid white;
 }
 
+@media (max-width: 576px) {
+  header nav {
+    background-color: white;
+  }
+}
+
 header nav .nav-container .nav-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -107,6 +113,15 @@ header nav .nav-container .nav-row .left-nav a {
 
 header nav .nav-container .nav-row .left-nav a span {
   color: #e41a1a;
+}
+
+@media (max-width: 576px) {
+  header nav .nav-container .nav-row .left-nav a {
+    color: black;
+  }
+  header nav .nav-container .nav-row .left-nav a span {
+    color: #e41a1a;
+  }
 }
 
 header nav .nav-container .nav-row .right-nav .nav-links {
@@ -168,6 +183,55 @@ header nav .nav-container .nav-row .right-nav .nav-links li:not(:last-child) {
   margin-right: 5%;
 }
 
+@media (max-width: 576px) {
+  header nav .nav-container .nav-row .right-nav {
+    display: none;
+  }
+}
+
+header nav .nav-container .nav-row .right-nav-collapsed {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  header nav .nav-container .nav-row .right-nav-collapsed {
+    display: block;
+    text-align: right;
+  }
+  header nav .nav-container .nav-row .right-nav-collapsed .right-nav-collapse-btn {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #e41a1a;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+header nav .nav-container .nav-row .collapsed-nav-items {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  header nav .nav-container .nav-row .collapsed-nav-items {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+  header nav .nav-container .nav-row .collapsed-nav-items .collapsed-nav-links {
+    padding: 2.5% 0;
+  }
+  header nav .nav-container .nav-row .collapsed-nav-items .collapsed-nav-links li {
+    margin-bottom: 2.5%;
+  }
+  header nav .nav-container .nav-row .collapsed-nav-items .collapsed-nav-links li a {
+    display: inline-block;
+    font-weight: 600;
+    color: black;
+  }
+  header nav .nav-container .nav-row .collapsed-nav-items .collapsed-nav-links li .active {
+    color: #e41a1a;
+  }
+}
+
 footer #shortcut-paths {
   padding: 5% 0;
   border-bottom: 1px solid #dee2e6;
@@ -196,6 +260,13 @@ footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .connect-si
   margin-bottom: 8.5%;
 }
 
+@media (max-width: 576px) {
+  footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .connect-side .connect-description {
+    padding-right: 10.5%;
+    margin-bottom: 5%;
+  }
+}
+
 footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .connect-side .connect-apps-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,6 +285,12 @@ footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .connect-si
 
 footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .connect-side .connect-apps-box li:not(:first-child) {
   margin-left: 4%;
+}
+
+@media (max-width: 576px) {
+  footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .movies-side {
+    margin-top: 1.5%;
+  }
 }
 
 footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .movies-side .movies-heading {
@@ -238,6 +315,20 @@ footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .movies-sid
   margin-bottom: 7.5%;
 }
 
+@media (max-width: 576px) {
+  footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .movies-side .movies-side-box .movies-side-box-row .movies-side-box-left-side .movie-item:not(:last-child),
+  footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .movies-side .movies-side-box .movies-side-box-row .movies-side-box-right-side .movie-item:not(:last-child) {
+    margin-top: 1%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .tv-shows-side {
+    margin-top: 1.5%;
+  }
+}
+
 footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .tv-shows-side .tv-shows-heading {
   font-family: "Baloo";
   font-size: 1.8rem;
@@ -260,6 +351,20 @@ footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .tv-shows-s
   margin-bottom: 7.5%;
 }
 
+@media (max-width: 576px) {
+  footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .tv-shows-side .tv-shows-side-box .tv-shows-side-box-row .tv-shows-side-box-left-side .tv-shows-item:not(:last-child),
+  footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .tv-shows-side .tv-shows-side-box .tv-shows-side-box-row .tv-shows-side-box-right-side .tv-shows-item:not(:last-child) {
+    margin-top: 1%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .my-account-side {
+    margin-top: 1.5%;
+  }
+}
+
 footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .my-account-side .my-account-heading {
   font-family: "Baloo";
   font-size: 1.8rem;
@@ -280,6 +385,14 @@ footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .my-account
 footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .my-account-side .my-account-side-box .my-account-side-box-row .my-account-side-box-left-side .my-account-item:not(:last-child),
 footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .my-account-side .my-account-side-box .my-account-side-box-row .my-account-side-box-right-side .my-account-item:not(:last-child) {
   margin-bottom: 7.5%;
+}
+
+@media (max-width: 576px) {
+  footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .my-account-side .my-account-side-box .my-account-side-box-row .my-account-side-box-left-side .my-account-item:not(:last-child),
+  footer #shortcut-paths .shortcut-paths-container .shortcut-paths-row .my-account-side .my-account-side-box .my-account-side-box-row .my-account-side-box-right-side .my-account-item:not(:last-child) {
+    margin-top: 1%;
+    margin-bottom: 0;
+  }
 }
 
 footer #copyright {

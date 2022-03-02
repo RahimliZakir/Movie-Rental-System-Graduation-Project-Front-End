@@ -7,6 +7,11 @@ header {
     right: 0;
     padding: 2% 0;
     border-bottom: 1px solid white;
+
+    @include MediaRespond("tel") {
+      background-color: white;
+    }
+
     .nav-container {
       .nav-row {
         align-items: center;
@@ -22,7 +27,18 @@ header {
               color: $this-red;
             }
           }
+
+          @include MediaRespond("tel") {
+            a {
+              color: black;
+
+              span {
+                color: $this-red;
+              }
+            }
+          }
         }
+
         .right-nav {
           .nav-links {
             @include Flexing(center, flex-end);
@@ -74,6 +90,54 @@ header {
 
             li:not(:last-child) {
               margin-right: 5%;
+            }
+          }
+
+          @include MediaRespond("tel") {
+            display: none;
+          }
+        }
+
+        .right-nav-collapsed {
+          display: none;
+
+          @include MediaRespond("tel") {
+            display: block;
+            text-align: right;
+
+            .right-nav-collapse-btn {
+              display: inline-block;
+              font-size: 1.4rem;
+              color: $this-red;
+              border: none;
+              background-color: transparent;
+            }
+          }
+        }
+
+        .collapsed-nav-items {
+          display: none;
+
+          @include MediaRespond("tel") {
+            border-top: 1px solid #ededed;
+            border-bottom: 1px solid #ededed;
+
+            .collapsed-nav-links {
+              padding: 2.5% 0;
+
+              li {
+                margin-bottom: 2.5%;
+
+                a {
+                  display: inline-block;
+                  font-weight: 600;
+                  color: black;
+                }
+
+                .active {
+                  color: $this-red;
+                }
+              }
             }
           }
         }
