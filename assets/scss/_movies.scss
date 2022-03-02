@@ -12,6 +12,10 @@
   animation-iteration-count: infinite;
   padding: 20% 0 12.5% 0;
 
+  @include MediaRespond("tel") {
+    padding: 55% 0 30% 0;
+  }
+
   .movies-cards-animation-container {
     .movies-cards-animation-row {
       .movies-cards-main-heading {
@@ -29,6 +33,14 @@
 
       .movies-cards-list {
         @include Flexing(center);
+
+        @include MediaRespond("tel") {
+          flex-wrap: wrap;
+
+          .movies-cards-item {
+            margin-bottom: 2.5%;
+          }
+        }
 
         .movies-cards-item {
           .movies-cards-badge {
@@ -54,6 +66,10 @@
 #latest-movies {
   padding: 5% 0;
   border-bottom: 1px solid $border-color;
+
+  @include MediaRespond("tel") {
+    padding: 12.5% 0 !important;
+  }
 
   .latest-movies-container {
     .latest-movies-row {
@@ -82,6 +98,10 @@
       }
       .latest-movies-card-col {
         margin-top: 2.5%;
+
+        @include MediaRespond("tel") {
+          margin-top: 7.5%;
+        }
 
         .card {
           border-radius: 0;

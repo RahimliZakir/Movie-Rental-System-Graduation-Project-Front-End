@@ -1891,6 +1891,12 @@ footer #copyright .copyright-container .copyright-content {
   padding: 20% 0 12.5% 0;
 }
 
+@media (max-width: 576px) {
+  #movies-cards-animation {
+    padding: 55% 0 30% 0;
+  }
+}
+
 #movies-cards-animation .movies-cards-animation-container .movies-cards-animation-row .movies-cards-main-heading {
   font-family: "Baloo";
   font-size: 3.2rem;
@@ -1913,6 +1919,16 @@ footer #copyright .copyright-container .copyright-content {
           align-items: center;
 }
 
+@media (max-width: 576px) {
+  #movies-cards-animation .movies-cards-animation-container .movies-cards-animation-row .movies-cards-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #movies-cards-animation .movies-cards-animation-container .movies-cards-animation-row .movies-cards-list .movies-cards-item {
+    margin-bottom: 2.5%;
+  }
+}
+
 #movies-cards-animation .movies-cards-animation-container .movies-cards-animation-row .movies-cards-list .movies-cards-item .movies-cards-badge {
   display: inline-block;
   cursor: pointer;
@@ -1931,6 +1947,12 @@ footer #copyright .copyright-container .copyright-content {
 #latest-movies {
   padding: 5% 0;
   border-bottom: 1px solid #dee2e6;
+}
+
+@media (max-width: 576px) {
+  #latest-movies {
+    padding: 12.5% 0 !important;
+  }
 }
 
 #latest-movies .latest-movies-container .latest-movies-row {
@@ -1971,6 +1993,12 @@ footer #copyright .copyright-container .copyright-content {
 
 #latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col {
   margin-top: 2.5%;
+}
+
+@media (max-width: 576px) {
+  #latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col {
+    margin-top: 7.5%;
+  }
 }
 
 #latest-movies .latest-movies-container .latest-movies-row .latest-movies-card-col .card {
