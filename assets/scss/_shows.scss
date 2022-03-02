@@ -12,6 +12,10 @@
   animation-iteration-count: infinite;
   padding: 20% 0 12.5% 0;
 
+  @include MediaRespond("tel") {
+    padding: 55% 0 30% 0;
+  }
+
   .shows-cards-animation-container {
     .shows-cards-animation-row {
       .shows-cards-main-heading {
@@ -29,6 +33,14 @@
 
       .shows-cards-list {
         @include Flexing(center);
+
+        @include MediaRespond("tel") {
+          flex-wrap: wrap;
+
+          .shows-cards-item {
+            margin-bottom: 2.5%;
+          }
+        }
 
         .shows-cards-item {
           .shows-cards-badge {
@@ -54,6 +66,11 @@
 #latest-tv-show-start {
   padding: 5% 0;
   background-color: #1e2129;
+
+  @include MediaRespond("tel") {
+    padding: 12.5% 0 !important;
+  }
+
   .latest-tv-show-start-container {
     .latest-tv-show-start-row {
       align-items: center;
@@ -84,6 +101,10 @@
 
       .latest-tv-show-bottom-col {
         margin-top: 2.5%;
+
+        @include MediaRespond("tel") {
+          margin-top: 7.5%;
+        }
 
         .card {
           background-color: transparent;

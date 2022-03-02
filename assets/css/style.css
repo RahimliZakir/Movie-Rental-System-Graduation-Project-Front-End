@@ -2179,6 +2179,12 @@ footer #copyright .copyright-container .copyright-content {
   padding: 20% 0 12.5% 0;
 }
 
+@media (max-width: 576px) {
+  #shows-cards-animation {
+    padding: 55% 0 30% 0;
+  }
+}
+
 #shows-cards-animation .shows-cards-animation-container .shows-cards-animation-row .shows-cards-main-heading {
   font-family: "Baloo";
   font-size: 3.2rem;
@@ -2201,6 +2207,16 @@ footer #copyright .copyright-container .copyright-content {
           align-items: center;
 }
 
+@media (max-width: 576px) {
+  #shows-cards-animation .shows-cards-animation-container .shows-cards-animation-row .shows-cards-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #shows-cards-animation .shows-cards-animation-container .shows-cards-animation-row .shows-cards-list .shows-cards-item {
+    margin-bottom: 2.5%;
+  }
+}
+
 #shows-cards-animation .shows-cards-animation-container .shows-cards-animation-row .shows-cards-list .shows-cards-item .shows-cards-badge {
   display: inline-block;
   cursor: pointer;
@@ -2219,6 +2235,12 @@ footer #copyright .copyright-container .copyright-content {
 #latest-tv-show-start {
   padding: 5% 0;
   background-color: #1e2129;
+}
+
+@media (max-width: 576px) {
+  #latest-tv-show-start {
+    padding: 12.5% 0 !important;
+  }
 }
 
 #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row {
@@ -2260,6 +2282,12 @@ footer #copyright .copyright-container .copyright-content {
 
 #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col {
   margin-top: 2.5%;
+}
+
+@media (max-width: 576px) {
+  #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col {
+    margin-top: 7.5%;
+  }
 }
 
 #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card {
