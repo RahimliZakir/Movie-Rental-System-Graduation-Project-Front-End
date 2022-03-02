@@ -4755,6 +4755,12 @@ body {
   padding: 12.5% 0;
 }
 
+@media (max-width: 576px) {
+  #blog-starter {
+    padding: 27.75% 0 12.5%;
+  }
+}
+
 #blog-starter .blog-starter-container .blog-starter-row .blog-starter-heading {
   font-family: "RobotoSerif";
   color: white;
@@ -4765,6 +4771,12 @@ body {
 #blogs {
   padding: 5% 0;
   border-bottom: 1px solid #ededed;
+}
+
+@media (max-width: 576px) {
+  #blogs {
+    padding: 10% 0;
+  }
 }
 
 #blogs .blogs-container .blogs-row .blogs-col .blogs-card {
