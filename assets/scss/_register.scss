@@ -5,6 +5,11 @@
     .register-row {
       justify-content: center;
 
+      @include MediaRespond("tel") {
+        height: 100vh;
+        align-items: center;
+      }
+
       .register-col-row {
         .register-left-side {
           background-color: #f7f9fe;

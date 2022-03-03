@@ -12,6 +12,10 @@
   animation-iteration-count: infinite;
   padding: 20% 0 12.5% 0;
 
+  @include MediaRespond("tel") {
+    padding: 50% 0 30% 0;
+  }
+
   .contactus-cards-animation-container {
     .contactus-cards-animation-row {
       h2 {
@@ -33,6 +37,10 @@
   padding: 5% 0;
   border-bottom: 1px solid $border-color;
 
+  @include MediaRespond("tel") {
+    padding: 12.5% 0;
+  }
+
   .contact-side-container {
     .contact-side-row {
       align-items: center;
@@ -45,6 +53,10 @@
       }
 
       .contact-side-right-part {
+        @include MediaRespond("tel") {
+          margin-top: 5%;
+        }
+
         .contact-side-heading {
           font-family: "Baloo";
           font-weight: 600;
@@ -62,6 +74,10 @@
 
           [class*="col"] {
             margin-top: 2.5%;
+
+            @include MediaRespond("tel") {
+              margin-top: 0;
+            }
 
             label {
               display: inline-block;
