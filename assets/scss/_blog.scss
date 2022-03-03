@@ -7,6 +7,10 @@
     padding: 27.75% 0 12.5%;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 25% 0 12.5%;
+  }
+
   .blog-starter-container {
     .blog-starter-row {
       .blog-starter-heading {
@@ -14,6 +18,10 @@
         color: white;
         text-align: center;
         font-size: 3.5rem;
+
+        @include MediaRespond("tablet") {
+          font-size: 4.4rem;
+        }
       }
     }
   }

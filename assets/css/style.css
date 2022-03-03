@@ -2178,6 +2178,12 @@ footer #copyright .copyright-container .copyright-content {
   }
 }
 
+@media (max-width: 991px) {
+  #latest-movies {
+    padding: 12.5% 0 !important;
+  }
+}
+
 #latest-movies .latest-movies-container .latest-movies-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2186,6 +2192,12 @@ footer #copyright .copyright-container .copyright-content {
 
 #latest-movies .latest-movies-container .latest-movies-row .latest-movies-left-heading-side h2 {
   font-family: "RobotoBold";
+}
+
+@media (max-width: 991px) {
+  #latest-movies .latest-movies-container .latest-movies-row .latest-movies-left-heading-side h2 {
+    margin-bottom: 0;
+  }
 }
 
 #latest-movies .latest-movies-container .latest-movies-row .latest-movies-right-view-all-side {
@@ -2466,6 +2478,12 @@ footer #copyright .copyright-container .copyright-content {
   }
 }
 
+@media (max-width: 991px) {
+  #latest-tv-show-start {
+    padding: 12.5% 0 !important;
+  }
+}
+
 #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2475,6 +2493,12 @@ footer #copyright .copyright-container .copyright-content {
 #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-left-heading-side h2 {
   font-family: "RobotoBold";
   color: white;
+}
+
+@media (max-width: 991px) {
+  #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-left-heading-side h2 {
+    margin-bottom: 0;
+  }
 }
 
 #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-right-view-all-side {
@@ -2645,6 +2669,12 @@ footer #copyright .copyright-container .copyright-content {
   color: #ffffff;
   text-align: center;
   margin-top: 1.5%;
+}
+
+@media (max-width: 991px) {
+  #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .card-body .shows-start-price {
+    margin-top: 5%;
+  }
 }
 
 #latest-tv-show-start .latest-tv-show-start-container .latest-tv-show-start-row .latest-tv-show-bottom-col .card .card-body .shows-start-price span {
@@ -5206,11 +5236,23 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  #blog-starter {
+    padding: 25% 0 12.5%;
+  }
+}
+
 #blog-starter .blog-starter-container .blog-starter-row .blog-starter-heading {
   font-family: "RobotoSerif";
   color: white;
   text-align: center;
   font-size: 3.5rem;
+}
+
+@media (max-width: 991px) {
+  #blog-starter .blog-starter-container .blog-starter-row .blog-starter-heading {
+    font-size: 4.4rem;
+  }
 }
 
 #blogs {

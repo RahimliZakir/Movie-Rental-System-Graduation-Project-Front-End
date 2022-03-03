@@ -71,6 +71,10 @@
     padding: 12.5% 0 !important;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 12.5% 0 !important;
+  }
+
   .latest-tv-show-start-container {
     .latest-tv-show-start-row {
       align-items: center;
@@ -79,6 +83,10 @@
         h2 {
           font-family: "RobotoBold";
           color: white;
+
+          @include MediaRespond("tablet") {
+            margin-bottom: 0;
+          }
         }
       }
 
@@ -204,6 +212,10 @@
               color: #ffffff;
               text-align: center;
               margin-top: 1.5%;
+
+              @include MediaRespond("tablet") {
+                margin-top: 5%;
+              }
 
               span {
                 color: $this-red;

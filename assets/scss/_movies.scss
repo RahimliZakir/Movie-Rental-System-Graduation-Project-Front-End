@@ -71,12 +71,20 @@
     padding: 12.5% 0 !important;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 12.5% 0 !important;
+  }
+
   .latest-movies-container {
     .latest-movies-row {
       align-items: center;
       .latest-movies-left-heading-side {
         h2 {
           font-family: "RobotoBold";
+
+          @include MediaRespond("tablet") {
+            margin-bottom: 0;
+          }
         }
       }
 
