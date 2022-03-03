@@ -56,4 +56,13 @@ $(document).ready(function () {
   $(".selected-movie-play-btn").magnificPopup({
     type: "iframe",
   });
+
+  let mixer = mixitup(".recent-movies-row", {
+    selectors: {
+      target: ".recent-movies-cards-col",
+    },
+    animation: {
+      duration: 300,
+    },
+  });
 });
