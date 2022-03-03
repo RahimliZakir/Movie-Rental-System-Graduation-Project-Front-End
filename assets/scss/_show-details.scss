@@ -229,7 +229,8 @@
             padding: 2.5% 0;
 
             @include MediaRespond("tel") {
-              height: 275px;
+              height: 325px;
+              padding: 10% 0;
               @include Flexing(center, null, column);
             }
 
@@ -245,12 +246,11 @@
 
               @include MediaRespond("tel") {
                 position: static;
-                overflow-x: auto;
+                overflow: auto;
               }
 
               .theatre {
                 display: flex;
-                flex-wrap: wrap;
                 position: absolute;
                 top: 60%;
                 left: 50%;
@@ -258,6 +258,8 @@
 
                 @include MediaRespond("tel") {
                   position: static;
+                  flex-wrap: wrap;
+                  transform: translate(0, 0);
                 }
               }
 
@@ -318,8 +320,8 @@
                   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
                   @include MediaRespond("tel") {
-                    width: 20px;
-                    height: 30px;
+                    width: 27.5px;
+                    height: 40px;
                   }
                 }
 
@@ -378,6 +380,7 @@
 
                 @include MediaRespond("tel") {
                   margin-left: 0;
+                  padding-left: 100px;
                 }
 
                 .cinema-row {
@@ -405,8 +408,8 @@
                   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
                   @include MediaRespond("tel") {
-                    width: 20px;
-                    height: 30px;
+                    width: 27.5px;
+                    height: 40px;
                   }
                 }
 

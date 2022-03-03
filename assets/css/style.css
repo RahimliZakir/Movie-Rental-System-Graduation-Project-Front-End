@@ -4373,7 +4373,8 @@ body {
 
 @media (max-width: 576px) {
   #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box {
-    height: 275px;
+    height: 325px;
+    padding: 10% 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4401,7 +4402,7 @@ body {
 @media (max-width: 576px) {
   #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side {
     position: static;
-    overflow-x: auto;
+    overflow: auto;
   }
 }
 
@@ -4409,8 +4410,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -4421,6 +4420,10 @@ body {
 @media (max-width: 576px) {
   #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .theatre {
     position: static;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
@@ -4476,8 +4479,8 @@ body {
 
 @media (max-width: 576px) {
   #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .left .seat {
-    width: 20px;
-    height: 30px;
+    width: 27.5px;
+    height: 40px;
   }
 }
 
@@ -4548,6 +4551,7 @@ body {
 @media (max-width: 576px) {
   #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .right {
     margin-left: 0;
+    padding-left: 100px;
   }
 }
 
@@ -4573,8 +4577,8 @@ body {
 
 @media (max-width: 576px) {
   #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .right .seat {
-    width: 20px;
-    height: 30px;
+    width: 27.5px;
+    height: 40px;
   }
 }
 
