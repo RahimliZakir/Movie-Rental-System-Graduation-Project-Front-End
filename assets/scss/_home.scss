@@ -8,7 +8,10 @@
 
         @include MediaRespond("tel") {
           padding: 35% 0;
-          height: 100vh;
+        }
+
+        @include MediaRespond("tablet") {
+          background-position: center;
         }
 
         .films-swiper-container {
@@ -27,6 +30,10 @@
 
                 @include MediaRespond("tel") {
                   font-size: 2.2rem;
+                }
+
+                @include MediaRespond("tablet") {
+                  font-size: 3rem;
                 }
               }
 
@@ -140,6 +147,10 @@
   .top-categories-container {
     .top-categories-row {
       .top-categories-left-side {
+        @include MediaRespond("tablet") {
+          text-align: center;
+        }
+
         .top-categories-lil-heading {
           color: $this-red;
         }
@@ -149,6 +160,10 @@
           font-family: "RobotoBold";
           font-size: 2.2rem;
           padding-right: 30%;
+
+          @include MediaRespond("tablet") {
+            padding-right: 0;
+          }
         }
 
         .top-categories-description {
@@ -156,6 +171,10 @@
           font-family: "Baloo";
           padding-right: 9.5%;
           margin: 2.5% 0 4.5%;
+
+          @include MediaRespond("tablet") {
+            padding-right: 0;
+          }
         }
 
         .top-categories-btn {
@@ -239,6 +258,10 @@
           @include MediaRespond("tel") {
             margin-bottom: 0;
           }
+
+          @include MediaRespond("tablet") {
+            margin-bottom: 0;
+          }
         }
       }
 
@@ -252,6 +275,10 @@
           border-radius: 5px;
           padding: 4px 9px;
           transition: 0.2s;
+
+          @include MediaRespond("tablet") {
+            padding: 10px 17.5px !important;
+          }
 
           &:hover {
             background-color: #c82333;
@@ -404,11 +431,20 @@
     padding: 10% 0 !important;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 10% 0 !important;
+  }
+
   .latest-tv-show-start-container {
     .latest-tv-show-start-row {
       .latest-tv-show-top-left-side {
         @include MediaRespond("tel") {
           margin-bottom: 7.5%;
+        }
+
+        @include MediaRespond("tablet") {
+          text-align: center;
+          margin-bottom: 5%;
         }
 
         h6 {
@@ -425,6 +461,10 @@
           color: white;
           padding-right: 12.5%;
           margin-bottom: 5%;
+
+          @include MediaRespond("tablet") {
+            margin-bottom: 2.5%;
+          }
         }
 
         .latest-tv-show-btn {
@@ -664,6 +704,10 @@
           @include MediaRespond("tel") {
             margin-bottom: 0;
           }
+
+          @include MediaRespond("tablet") {
+            margin-bottom: 0;
+          }
         }
       }
 
@@ -677,6 +721,10 @@
           border-radius: 5px;
           padding: 4px 9px;
           transition: 0.2s;
+
+          @include MediaRespond("tablet") {
+            padding: 10px 17.5px;
+          }
 
           &:hover {
             background-color: #c82333;
@@ -761,6 +809,10 @@
     padding: 7.5% 0;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 7.5% 0;
+  }
+
   .recent-movies-container {
     .recent-movies-row {
       align-items: center;
@@ -772,6 +824,11 @@
 
           @include MediaRespond("tel") {
             margin-bottom: 0;
+          }
+
+          @include MediaRespond("tablet") {
+            margin-bottom: 0;
+            font-size: 1.8rem;
           }
         }
       }
@@ -918,11 +975,20 @@
     background-position: 0;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 10% 0;
+    filter: brightness(0.8);
+  }
+
   .selected-movie-container {
     .selected-movie-row {
       align-items: center;
 
       .selected-movie-left-side {
+        @include MediaRespond("tablet") {
+          text-align: center;
+        }
+
         h2 {
           color: white;
           font-family: "Baloo";
@@ -933,6 +999,10 @@
         .selected-movie-rating-box {
           @include Flexing(center);
           margin-bottom: 3.5%;
+
+          @include MediaRespond("tablet") {
+            @include Flexing(center, center);
+          }
 
           li {
             i {
@@ -975,11 +1045,20 @@
           @include MediaRespond("tel") {
             padding-right: 10.5%;
           }
+
+          @include MediaRespond("tablet") {
+            padding-right: 0;
+          }
         }
 
         .selected-movie-buttons-box {
           @include Flexing(center);
           margin-top: 1.75%;
+
+          @include MediaRespond("tablet") {
+            @include Flexing(center, center);
+            margin-bottom: 5%;
+          }
 
           a {
             display: inline-block;
