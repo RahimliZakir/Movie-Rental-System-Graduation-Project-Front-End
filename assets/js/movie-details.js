@@ -10,7 +10,7 @@ $(document).ready(function () {
   });
 
   let clickHandler = false;
-
+  
   $(stars).on("mouseleave", function (e) {
     if (!clickHandler) {
       $(this).removeClass("fas").addClass("far");
