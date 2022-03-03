@@ -3493,6 +3493,12 @@ body {
   padding: 12.5% 5% 5%;
 }
 
+@media (max-width: 576px) {
+  #movie-fragment {
+    padding: 20% 5% 5%;
+  }
+}
+
 #movie-fragment .movie-fragment-container .movie-fragment-row .movie-fragment-col .movie-iframe-div {
   position: relative;
 }
@@ -3515,8 +3521,20 @@ body {
   height: 600px;
 }
 
+@media (max-width: 576px) {
+  #movie-fragment .movie-fragment-container .movie-fragment-row .movie-fragment-col .movie-iframe-div iframe {
+    height: 300px;
+  }
+}
+
 #movie-description {
   padding: 5% 0;
+}
+
+@media (max-width: 576px) {
+  #movie-description {
+    padding: 10% 0;
+  }
 }
 
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .films-swiper-badge {
@@ -3528,6 +3546,12 @@ body {
   color: black;
   font-family: "RobotoBold";
   font-size: 3.5rem;
+}
+
+@media (max-width: 576px) {
+  #movie-description .movie-description-container .movie-description-row .films-swiper-col h2 {
+    font-size: 2.2rem;
+  }
 }
 
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .specifications {
@@ -3656,6 +3680,12 @@ body {
   margin-top: 0.5%;
 }
 
+@media (max-width: 576px) {
+  #movie-description .movie-description-container .movie-description-row .films-swiper-col .film-description {
+    padding-right: 0;
+  }
+}
+
 #movie-description .movie-description-container .movie-description-row .films-swiper-col .film-types {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3780,12 +3810,31 @@ body {
   padding-right: 2.5%;
 }
 
+@media (max-width: 576px) {
+  #movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}
+
 #movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment {
   margin-top: 2.5%;
 }
 
+@media (max-width: 576px) {
+  #movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row {
+    --bs-gutter-x: 0;
+  }
+}
+
 #movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div {
   width: 60%;
+}
+
+@media (max-width: 576px) {
+  #movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div {
+    width: 85%;
+  }
 }
 
 #movie-description-comment .movie-description-comment-container .movie-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div img {
@@ -3863,6 +3912,12 @@ body {
   border-bottom: 1px solid #dee2e6;
 }
 
+@media (max-width: 576px) {
+  #more-like-these {
+    padding: 15% 0;
+  }
+}
+
 #more-like-these .more-like-these-container .more-like-these-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -3871,6 +3926,12 @@ body {
 
 #more-like-these .more-like-these-container .more-like-these-row .latest-movies-left-heading-side h2 {
   font-family: "RobotoBold";
+}
+
+@media (max-width: 576px) {
+  #more-like-these .more-like-these-container .more-like-these-row .latest-movies-left-heading-side h2 {
+    margin-bottom: 0;
+  }
 }
 
 #more-like-these .more-like-these-container .more-like-these-row .latest-movies-right-view-all-side {
@@ -4053,6 +4114,12 @@ body {
   padding: 12.5% 5% 5%;
 }
 
+@media (max-width: 576px) {
+  #show-fragment {
+    padding: 20% 5% 5%;
+  }
+}
+
 #show-fragment .show-fragment-container .show-fragment-row .show-fragment-col .show-image-div {
   position: relative;
 }
@@ -4076,8 +4143,20 @@ body {
      object-fit: cover;
 }
 
+@media (max-width: 576px) {
+  #show-fragment .show-fragment-container .show-fragment-row .show-fragment-col .show-image-div img {
+    height: 300px;
+  }
+}
+
 #show-description {
   padding: 5% 0;
+}
+
+@media (max-width: 576px) {
+  #show-description {
+    padding: 10% 0;
+  }
 }
 
 #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-badge {
@@ -4217,6 +4296,12 @@ body {
   margin-top: 0.5%;
 }
 
+@media (max-width: 576px) {
+  #show-description .show-description-container .show-description-row .films-swiper-col .film-description {
+    padding: 0;
+  }
+}
+
 #show-description .show-description-container .show-description-row .films-swiper-col .film-types {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4286,6 +4371,22 @@ body {
   padding: 2.5% 0;
 }
 
+@media (max-width: 576px) {
+  #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box {
+    height: 275px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .theatre-heading {
   color: white;
   font-family: "RobotoSerif";
@@ -4297,15 +4398,30 @@ body {
   padding: 12.5% 0;
 }
 
+@media (max-width: 576px) {
+  #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side {
+    position: static;
+    overflow-x: auto;
+  }
+}
+
 #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .theatre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: absolute;
   top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 576px) {
+  #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .theatre {
+    position: static;
+  }
 }
 
 #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .cinema-seats {
@@ -4356,6 +4472,13 @@ body {
   margin-top: -32px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 576px) {
+  #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .left .seat {
+    width: 20px;
+    height: 30px;
+  }
 }
 
 #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .left .row-2 {
@@ -4422,6 +4545,12 @@ body {
   margin-left: 70px;
 }
 
+@media (max-width: 576px) {
+  #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .right {
+    margin-left: 0;
+  }
+}
+
 #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .right .cinema-row {
   -webkit-transform: skew(7deg);
           transform: skew(7deg);
@@ -4440,6 +4569,13 @@ body {
   margin-top: -32px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 576px) {
+  #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .right .seat {
+    width: 20px;
+    height: 30px;
+  }
 }
 
 #show-description .show-description-container .show-description-row .films-swiper-col .films-swiper-buttons-box .films-theatre-box .films-theatre-side .right .row-2 {
@@ -4580,12 +4716,31 @@ body {
   padding-right: 2.5%;
 }
 
+@media (max-width: 576px) {
+  #show-description-comment .show-description-comment-container .show-description-comment-row .written-comments-col {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}
+
 #show-description-comment .show-description-comment-container .show-description-comment-row .written-comments-col .written-comment {
   margin-top: 2.5%;
 }
 
+@media (max-width: 576px) {
+  #show-description-comment .show-description-comment-container .show-description-comment-row .written-comments-col .written-comment .written-comment-row {
+    --bs-gutter-x: 0;
+  }
+}
+
 #show-description-comment .show-description-comment-container .show-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div {
   width: 60%;
+}
+
+@media (max-width: 576px) {
+  #show-description-comment .show-description-comment-container .show-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div {
+    width: 85%;
+  }
 }
 
 #show-description-comment .show-description-comment-container .show-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div img {
@@ -4663,6 +4818,12 @@ body {
   background-color: #1e2129;
 }
 
+@media (max-width: 576px) {
+  #show-like-these {
+    padding: 15% 0;
+  }
+}
+
 #show-like-these .show-like-these-container .show-like-these-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -4672,6 +4833,12 @@ body {
 #show-like-these .show-like-these-container .show-like-these-row .latest-tv-show-left-heading-side h2 {
   font-family: "RobotoBold";
   color: white;
+}
+
+@media (max-width: 576px) {
+  #show-like-these .show-like-these-container .show-like-these-row .latest-tv-show-left-heading-side h2 {
+    margin: 0;
+  }
 }
 
 #show-like-these .show-like-these-container .show-like-these-row .latest-tv-show-right-view-all-side {
@@ -4928,6 +5095,12 @@ body {
   padding: 12.5% 0;
 }
 
+@media (max-width: 576px) {
+  #blog-description-starter {
+    padding: 27.5% 0 12.5%;
+  }
+}
+
 #blog-description-starter .blog-description-starter-container .blog-description-starter-row .blog-description-starter-heading {
   font-family: "RobotoSerif";
   color: white;
@@ -4935,8 +5108,20 @@ body {
   font-size: 3.5rem;
 }
 
+@media (max-width: 576px) {
+  #blog-description-starter .blog-description-starter-container .blog-description-starter-row .blog-description-starter-heading {
+    font-size: 2rem;
+  }
+}
+
 #blog-description {
   padding: 5% 0;
+}
+
+@media (max-width: 576px) {
+  #blog-description {
+    padding: 12.5% 0;
+  }
 }
 
 #blog-description .blog-description-container .blog-description-row {
@@ -4966,6 +5151,12 @@ body {
   height: 500px;
 }
 
+@media (max-width: 576px) {
+  #blog-description .blog-description-container .blog-description-row .blog-description-col .blog-main-img-side {
+    height: 250px;
+  }
+}
+
 #blog-description .blog-description-container .blog-description-row .blog-description-col .blog-description-content {
   margin-top: 3.5%;
   font-family: "Baloo";
@@ -4982,6 +5173,12 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+@media (max-width: 576px) {
+  #blog-description .blog-description-container .blog-description-row .blog-description-col .blog-description-swiper .swiper-slide img {
+    height: 225px;
+  }
 }
 
 #blog-description-comment {
@@ -5044,8 +5241,20 @@ body {
   margin-top: 2.5%;
 }
 
+@media (max-width: 576px) {
+  #blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row {
+    --bs-gutter-x: 0;
+  }
+}
+
 #blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div {
   width: 60%;
+}
+
+@media (max-width: 576px) {
+  #blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div {
+    width: 85%;
+  }
 }
 
 #blog-description-comment .blog-description-comment-container .blog-description-comment-row .written-comments-col .written-comment .written-comment-row .written-comment-profile-side .img-div img {

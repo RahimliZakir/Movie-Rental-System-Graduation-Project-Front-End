@@ -2,6 +2,10 @@
   background-color: #303030;
   padding: 12.5% 5% 5%;
 
+  @include MediaRespond("tel") {
+    padding: 20% 5% 5%;
+  }
+
   .movie-fragment-container {
     .movie-fragment-row {
       .movie-fragment-col {
@@ -24,6 +28,10 @@
             display: inline-block;
             width: 100%;
             height: 600px;
+
+            @include MediaRespond("tel") {
+              height: 300px;
+            }
           }
         }
       }
@@ -33,6 +41,10 @@
 
 #movie-description {
   padding: 5% 0;
+
+  @include MediaRespond("tel") {
+    padding: 10% 0;
+  }
 
   .movie-description-container {
     .movie-description-row {
@@ -46,6 +58,10 @@
           color: black;
           font-family: "RobotoBold";
           font-size: 3.5rem;
+
+          @include MediaRespond("tel") {
+            font-size: 2.2rem;
+          }
         }
 
         .specifications {
@@ -156,6 +172,10 @@
           color: #7b7b7b;
           padding-right: 42.5%;
           margin-top: 0.5%;
+
+          @include MediaRespond("tel") {
+            padding-right: 0;
+          }
         }
 
         .film-types {
@@ -280,13 +300,27 @@
       .written-comments-col {
         padding-left: 5%;
         padding-right: 2.5%;
+
+        @include MediaRespond("tel") {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+
         .written-comment {
           margin-top: 2.5%;
 
           .written-comment-row {
+            @include MediaRespond("tel") {
+              --bs-gutter-x: 0;
+            }
+
             .written-comment-profile-side {
               .img-div {
                 width: 60%;
+
+                @include MediaRespond("tel") {
+                  width: 85%;
+                }
 
                 img {
                   width: 100%;
@@ -363,12 +397,20 @@
   padding: 5% 0;
   border-bottom: 1px solid $border-color;
 
+  @include MediaRespond("tel") {
+    padding: 15% 0;
+  }
+
   .more-like-these-container {
     .more-like-these-row {
       align-items: center;
       .latest-movies-left-heading-side {
         h2 {
           font-family: "RobotoBold";
+
+          @include MediaRespond("tel") {
+            margin-bottom: 0;
+          }
         }
       }
 

@@ -2,6 +2,10 @@
   background-color: #303030;
   padding: 12.5% 5% 5%;
 
+  @include MediaRespond("tel") {
+    padding: 20% 5% 5%;
+  }
+
   .show-fragment-container {
     .show-fragment-row {
       .show-fragment-col {
@@ -24,6 +28,10 @@
             width: 100%;
             height: 600px;
             object-fit: cover;
+
+            @include MediaRespond("tel") {
+              height: 300px;
+            }
           }
         }
       }
@@ -33,6 +41,10 @@
 
 #show-description {
   padding: 5% 0;
+
+  @include MediaRespond("tel") {
+    padding: 10% 0;
+  }
 
   .show-description-container {
     .show-description-row {
@@ -156,6 +168,10 @@
           color: #7b7b7b;
           padding-right: 42.5%;
           margin-top: 0.5%;
+
+          @include MediaRespond("tel") {
+            padding: 0;
+          }
         }
 
         .film-types {
@@ -212,6 +228,11 @@
             margin-top: 2.5%;
             padding: 2.5% 0;
 
+            @include MediaRespond("tel") {
+              height: 275px;
+              @include Flexing(center, null, column);
+            }
+
             .theatre-heading {
               color: white;
               font-family: "RobotoSerif";
@@ -222,12 +243,22 @@
               position: relative;
               padding: 12.5% 0;
 
+              @include MediaRespond("tel") {
+                position: static;
+                overflow-x: auto;
+              }
+
               .theatre {
                 display: flex;
+                flex-wrap: wrap;
                 position: absolute;
                 top: 60%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+
+                @include MediaRespond("tel") {
+                  position: static;
+                }
               }
 
               .cinema-seats {
@@ -285,6 +316,11 @@
                   transform: skew(20deg);
                   margin-top: -32px;
                   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+                  @include MediaRespond("tel") {
+                    width: 20px;
+                    height: 30px;
+                  }
                 }
 
                 .row-2 {
@@ -340,6 +376,10 @@
               .right {
                 margin-left: 70px;
 
+                @include MediaRespond("tel") {
+                  margin-left: 0;
+                }
+
                 .cinema-row {
                   transform: skew(7deg);
                   margin: 0 6px;
@@ -363,6 +403,11 @@
                   transform: skew(-8deg);
                   margin-top: -32px;
                   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+                  @include MediaRespond("tel") {
+                    width: 20px;
+                    height: 30px;
+                  }
                 }
 
                 .row-2 {
@@ -497,13 +542,27 @@
       .written-comments-col {
         padding-left: 5%;
         padding-right: 2.5%;
+
+        @include MediaRespond("tel") {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+
         .written-comment {
           margin-top: 2.5%;
 
           .written-comment-row {
+            @include MediaRespond("tel") {
+              --bs-gutter-x: 0;
+            }
+
             .written-comment-profile-side {
               .img-div {
                 width: 60%;
+
+                @include MediaRespond("tel") {
+                  width: 85%;
+                }
 
                 img {
                   width: 100%;
@@ -579,6 +638,11 @@
 #show-like-these {
   padding: 5% 0;
   background-color: #1e2129;
+
+  @include MediaRespond("tel") {
+    padding: 15% 0;
+  }
+
   .show-like-these-container {
     .show-like-these-row {
       align-items: center;
@@ -587,6 +651,10 @@
         h2 {
           font-family: "RobotoBold";
           color: white;
+
+          @include MediaRespond("tel") {
+            margin: 0;
+          }
         }
       }
 
