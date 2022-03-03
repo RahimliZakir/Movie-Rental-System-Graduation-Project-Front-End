@@ -97,6 +97,12 @@ header nav {
   }
 }
 
+@media (max-width: 991px) {
+  header nav {
+    background-color: white;
+  }
+}
+
 header nav .nav-container .nav-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -118,6 +124,16 @@ header nav .nav-container .nav-row .left-nav a span {
 @media (max-width: 576px) {
   header nav .nav-container .nav-row .left-nav a {
     color: black;
+  }
+  header nav .nav-container .nav-row .left-nav a span {
+    color: #e41a1a;
+  }
+}
+
+@media (max-width: 991px) {
+  header nav .nav-container .nav-row .left-nav a {
+    color: black;
+    font-size: 1.8rem;
   }
   header nav .nav-container .nav-row .left-nav a span {
     color: #e41a1a;
@@ -189,6 +205,12 @@ header nav .nav-container .nav-row .right-nav .nav-links li:not(:last-child) {
   }
 }
 
+@media (max-width: 991px) {
+  header nav .nav-container .nav-row .right-nav {
+    display: none;
+  }
+}
+
 header nav .nav-container .nav-row .right-nav-collapsed {
   display: none;
 }
@@ -201,6 +223,20 @@ header nav .nav-container .nav-row .right-nav-collapsed {
   header nav .nav-container .nav-row .right-nav-collapsed .right-nav-collapse-btn {
     display: inline-block;
     font-size: 1.4rem;
+    color: #e41a1a;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 991px) {
+  header nav .nav-container .nav-row .right-nav-collapsed {
+    display: block;
+    text-align: right;
+  }
+  header nav .nav-container .nav-row .right-nav-collapsed .right-nav-collapse-btn {
+    display: inline-block;
+    font-size: 1.8rem;
     color: #e41a1a;
     border: none;
     background-color: transparent;
@@ -226,6 +262,28 @@ header nav .nav-container .nav-row .collapsed-nav-items {
     display: inline-block;
     font-weight: 600;
     color: black;
+  }
+  header nav .nav-container .nav-row .collapsed-nav-items .collapsed-nav-links li .active {
+    color: #e41a1a;
+  }
+}
+
+@media (max-width: 991px) {
+  header nav .nav-container .nav-row .collapsed-nav-items {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+  header nav .nav-container .nav-row .collapsed-nav-items .collapsed-nav-links {
+    padding: 2.5% 0;
+  }
+  header nav .nav-container .nav-row .collapsed-nav-items .collapsed-nav-links li {
+    margin-bottom: 2.5%;
+  }
+  header nav .nav-container .nav-row .collapsed-nav-items .collapsed-nav-links li a {
+    display: inline-block;
+    font-weight: 600;
+    color: black;
+    font-size: 1.8rem;
   }
   header nav .nav-container .nav-row .collapsed-nav-items .collapsed-nav-links li .active {
     color: #e41a1a;
