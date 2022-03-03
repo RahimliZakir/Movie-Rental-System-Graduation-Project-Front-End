@@ -1677,6 +1677,12 @@ footer #copyright .copyright-container .copyright-content {
   padding: 20% 0 12.5% 0;
 }
 
+@media (max-width: 576px) {
+  #faq-cards-animation {
+    padding: 55% 0 30% 0;
+  }
+}
+
 #faq-cards-animation .faq-cards-animation-container .faq-cards-animation-row h2 {
   font-family: "Baloo";
   font-weight: 600;
@@ -1689,40 +1695,59 @@ footer #copyright .copyright-container .copyright-content {
   padding: 5% 0;
 }
 
-.accordion {
+@media (max-width: 576px) {
+  #faq {
+    padding: 15% 0;
+  }
+}
+
+#faq .accordion {
   overflow: hidden;
 }
 
-.accordion .collapsed,
-.accordion .expanding {
+#faq .accordion .collapsed,
+#faq .accordion .expanding {
   display: none;
 }
 
-.faq-heading {
+#faq .faq-heading {
   font-size: 2.6rem;
   font-family: "RobotoBold";
   margin-bottom: 2.5%;
 }
 
-.acc-heading {
+@media (max-width: 576px) {
+  #faq .faq-heading {
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+  }
+}
+
+#faq .acc-heading {
   font-size: 1.4rem;
   padding: 1.5% 1% !important;
 }
 
-.acc-heading i {
+@media (max-width: 576px) {
+  #faq .acc-heading {
+    font-size: 1rem;
+  }
+}
+
+#faq .acc-heading i {
   display: inline-block;
   font-size: 0.9rem;
   color: grey;
 }
 
-.card-header {
+#faq .card-header {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1;
   color: #222;
 }
 
-.card-header a {
+#faq .card-header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1733,11 +1758,11 @@ footer #copyright .copyright-container .copyright-content {
   padding: 1.8rem 0.5rem;
 }
 
-.card-header a:hover {
+#faq .card-header a:hover {
   color: #26c;
 }
 
-.card-header a::after {
+#faq .card-header a::after {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1750,82 +1775,82 @@ footer #copyright .copyright-container .copyright-content {
   color: #222;
 }
 
-.card-header .collapse {
+#faq .card-header .collapse {
   color: #26c;
 }
 
-.expand::after {
+#faq .expand::after {
   content: "\e953";
 }
 
-.collapse::after {
+#faq .collapse::after {
   content: "\e952";
 }
 
-.card-body {
+#faq .card-body {
   padding: 1.3rem 0.5rem;
 }
 
-.card {
+#faq .card {
   background-color: #fff;
 }
 
-.accordion-simple .card {
+#faq .accordion-simple .card {
   border-top: 1px solid #e1e1e1;
 }
 
-.accordion-gutter-md .card:not(:last-child) {
+#faq .accordion-gutter-md .card:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.accordion-gutter-sm .card:not(:last-child) {
+#faq .accordion-gutter-sm .card:not(:last-child) {
   margin-bottom: 2px;
 }
 
-.accordion-plus .expand::after {
+#faq .accordion-plus .expand::after {
   content: "\f2c3";
 }
 
-.accordion-plus .collapse::after {
+#faq .accordion-plus .collapse::after {
   content: "\f28f";
 }
 
-.accordion-boxed .card-body,
-.accordion-boxed .card-header a {
+#faq .accordion-boxed .card-body,
+#faq .accordion-boxed .card-header a {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-.accordion-boxed .card-header a::after {
+#faq .accordion-boxed .card-header a::after {
   right: 2.3rem;
 }
 
-.accordion-border .card {
+#faq .accordion-border .card {
   border-width: 1px 1px 0;
   border-style: solid;
   border-color: #e1e1e1;
 }
 
-.accordion-border .card:last-child {
+#faq .accordion-border .card:last-child {
   border-bottom: 1px solid #e1e1e1;
 }
 
-.accordion-background .card {
+#faq .accordion-background .card {
   background-color: #fff;
   border-color: #fff;
 }
 
-.accordion-dropshadow {
+#faq .accordion-dropshadow {
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
 }
 
-.accordion-dropshadow .card {
+#faq .accordion-dropshadow .card {
   background-color: #fff;
   border-color: #fff;
 }
 
-.accordion-icon .card-header i {
+#faq .accordion-icon .card-header i {
   margin-right: 1.5rem;
   font-size: 1.8rem;
   font-weight: 400;
@@ -1833,47 +1858,47 @@ footer #copyright .copyright-container .copyright-content {
   line-height: 0;
 }
 
-.accordion-card-bg .card {
+#faq .accordion-card-bg .card {
   border: 1px solid #f2f3f5;
 }
 
-.accordion-card-bg .card-header a {
+#faq .accordion-card-bg .card-header a {
   padding-top: 1.7rem;
   padding-bottom: 1.7rem;
   background-color: #f2f3f5;
 }
 
-.accordion-card-bg.accordion-primary .card {
+#faq .accordion-card-bg.accordion-primary .card {
   border: 0;
   background-color: #f2f3f5;
 }
 
-.accordion-card-bg.accordion-primary .card-header a {
+#faq .accordion-card-bg.accordion-primary .card-header a {
   padding-top: 1.8rem;
   padding-bottom: 1.8rem;
   background-color: #37c;
   color: #fff;
 }
 
-.accordion-card-bg.accordion-primary .card-header a::after {
+#faq .accordion-card-bg.accordion-primary .card-header a::after {
   color: #fff;
 }
 
-.accordion-color .collapse {
+#faq .accordion-color .collapse {
   color: #26c;
 }
 
-.accordion-card-border .card {
+#faq .accordion-card-border .card {
   border: 1px solid #dae1e5;
 }
 
-.acc-heading {
+#faq .acc-heading {
   color: #222222;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.acc-heading:hover {
+#faq .acc-heading:hover {
   color: #e41a1a !important;
 }
 
@@ -2847,6 +2872,15 @@ footer #copyright .copyright-container .copyright-content {
 
 #coming .validate-input {
   position: relative;
+}
+
+@media (max-width: 576px) {
+  #coming .times-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #coming .alert-validate::before {

@@ -99,6 +99,13 @@
   .validate-input {
     position: relative;
   }
+
+  @include MediaRespond("tel") {
+    .times-box {
+      flex-direction: column;
+    }
+  }
+
   .alert-validate::before {
     content: attr(data-validate);
     position: absolute;
