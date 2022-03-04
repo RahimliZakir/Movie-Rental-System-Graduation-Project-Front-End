@@ -32,9 +32,10 @@ header {
             }
           }
 
-          @include MediaRespond("tel") {
+          @include MediaRespond("tablet") {
             a {
               color: black;
+              font-size: 1.8rem;
 
               span {
                 color: $this-red;
@@ -42,10 +43,9 @@ header {
             }
           }
 
-          @include MediaRespond("tablet") {
+          @include MediaRespond("tel") {
             a {
               color: black;
-              font-size: 1.8rem;
 
               span {
                 color: $this-red;
@@ -120,19 +120,6 @@ header {
         .right-nav-collapsed {
           display: none;
 
-          @include MediaRespond("tel") {
-            display: block;
-            text-align: right;
-
-            .right-nav-collapse-btn {
-              display: inline-block;
-              font-size: 1.4rem;
-              color: $this-red;
-              border: none;
-              background-color: transparent;
-            }
-          }
-
           @include MediaRespond("tablet") {
             display: block;
             text-align: right;
@@ -145,33 +132,23 @@ header {
               background-color: transparent;
             }
           }
+
+          @include MediaRespond("tel") {
+            display: block;
+            text-align: right;
+
+            .right-nav-collapse-btn {
+              display: inline-block;
+              font-size: 1.4rem;
+              color: $this-red;
+              border: none;
+              background-color: transparent;
+            }
+          }
         }
 
         .collapsed-nav-items {
           display: none;
-
-          @include MediaRespond("tel") {
-            border-top: 1px solid #ededed;
-            border-bottom: 1px solid #ededed;
-
-            .collapsed-nav-links {
-              padding: 2.5% 0;
-
-              li {
-                margin-bottom: 2.5%;
-
-                a {
-                  display: inline-block;
-                  font-weight: 600;
-                  color: black;
-                }
-
-                .active {
-                  color: $this-red;
-                }
-              }
-            }
-          }
 
           @include MediaRespond("tablet") {
             border-top: 1px solid #ededed;
@@ -188,6 +165,30 @@ header {
                   font-weight: 600;
                   color: black;
                   font-size: 1.8rem;
+                }
+
+                .active {
+                  color: $this-red;
+                }
+              }
+            }
+          }
+
+          @include MediaRespond("tel") {
+            border-top: 1px solid #ededed;
+            border-bottom: 1px solid #ededed;
+
+            .collapsed-nav-links {
+              padding: 2.5% 0;
+
+              li {
+                margin-bottom: 2.5%;
+
+                a {
+                  display: inline-block;
+                  font-weight: 600;
+                  color: black;
+                  font-size: 1rem;
                 }
 
                 .active {

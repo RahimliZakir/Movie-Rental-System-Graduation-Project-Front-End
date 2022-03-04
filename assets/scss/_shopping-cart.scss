@@ -3,12 +3,12 @@
   background-size: cover;
   padding: 12.5% 0;
 
-  @include MediaRespond("tel") {
-    padding: 27.75% 0 12.5%;
-  }
-
   @include MediaRespond("tablet") {
     padding: 25% 0 12.5%;
+  }
+
+  @include MediaRespond("tel") {
+    padding: 27.75% 0 12.5%;
   }
 
   .shopping-cart-banner-container {
@@ -19,12 +19,12 @@
         text-align: center;
         font-size: 3.5rem;
 
-        @include MediaRespond("tel") {
-          font-size: 2.2rem;
-        }
-
         @include MediaRespond("tablet") {
           font-size: 3.8rem;
+        }
+
+        @include MediaRespond("tel") {
+          font-size: 2.2rem;
         }
       }
     }
