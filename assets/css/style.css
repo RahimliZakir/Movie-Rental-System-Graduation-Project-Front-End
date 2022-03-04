@@ -475,15 +475,15 @@ footer #copyright .copyright-container .copyright-content {
   padding: 15% 0;
 }
 
-@media (max-width: 576px) {
-  #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item {
-    padding: 35% 0;
-  }
-}
-
 @media (max-width: 991px) {
   #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item {
     background-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item {
+    padding: 35% 0;
   }
 }
 
@@ -541,11 +541,6 @@ footer #copyright .copyright-container .copyright-content {
 @media (max-width: 576px) {
   #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-types {
     margin-bottom: 3.5%;
-  }
-}
-
-@media (max-width: 991px) {
-  #films-swiper .films-swiper-carousel .swiper-wrapper .films-swiper-item .films-swiper-container .films-swiper-row .films-swiper-col .film-types {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
