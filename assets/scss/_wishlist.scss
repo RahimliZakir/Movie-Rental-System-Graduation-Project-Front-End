@@ -7,6 +7,10 @@
     padding: 27.75% 0 12.5%;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 25% 0 12.5%;
+  }
+
   .wishlist-banner-container {
     .wishlist-banner-row {
       .wishlist-banner-heading {
@@ -18,6 +22,10 @@
         @include MediaRespond("tel") {
           font-size: 2rem;
         }
+
+        @include MediaRespond("tablet") {
+          font-size: 3.8rem;
+        }
       }
     }
   }
@@ -28,6 +36,10 @@
   border-bottom: 1px solid #ededed;
 
   @include MediaRespond("tel") {
+    padding: 12.5% 0;
+  }
+
+  @include MediaRespond("tablet") {
     padding: 12.5% 0;
   }
 

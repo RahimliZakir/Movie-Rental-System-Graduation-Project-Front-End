@@ -7,6 +7,10 @@
     padding: 27.75% 0 12.5%;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 25% 0 12.5%;
+  }
+
   .shopping-cart-banner-container {
     .shopping-cart-banner-row {
       .shopping-cart-banner-heading {
@@ -17,6 +21,10 @@
 
         @include MediaRespond("tel") {
           font-size: 2.2rem;
+        }
+
+        @include MediaRespond("tablet") {
+          font-size: 3.8rem;
         }
       }
     }
@@ -272,6 +280,10 @@
                 .name-price-heading {
                   font-size: 1.4rem;
                   font-weight: 600;
+
+                  @include MediaRespond("tablet") {
+                    margin-bottom: 0;
+                  }
                 }
               }
 
@@ -279,6 +291,10 @@
                 .seats-for-show-heading {
                   font-weight: 600;
                   font-family: "RobotoSerif";
+
+                  @include MediaRespond("tablet") {
+                    margin-bottom: 0;
+                  }
                 }
               }
 
