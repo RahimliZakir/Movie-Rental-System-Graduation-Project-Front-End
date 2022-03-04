@@ -41,6 +41,10 @@
     padding: 12.5% 0;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 12.5% 0;
+  }
+
   .contact-side-container {
     .contact-side-row {
       align-items: center;
@@ -76,6 +80,10 @@
             margin-top: 2.5%;
 
             @include MediaRespond("tel") {
+              margin-top: 0;
+            }
+
+            @include MediaRespond("tablet") {
               margin-top: 0;
             }
 

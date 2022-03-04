@@ -36,6 +36,10 @@
     padding: 15% 0;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 15% 0;
+  }
+
   .accordion {
     overflow: hidden;
   }

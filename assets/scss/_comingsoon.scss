@@ -305,6 +305,10 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+
+    @include MediaRespond("tablet") {
+      padding: 17.5px 20px;
+    }
   }
   .how-btn::before {
     content: "";

@@ -1899,6 +1899,12 @@ footer #copyright .copyright-container .copyright-content {
   }
 }
 
+@media (max-width: 991px) {
+  #faq {
+    padding: 15% 0;
+  }
+}
+
 #faq .accordion {
   overflow: hidden;
 }
@@ -2724,6 +2730,12 @@ footer #copyright .copyright-container .copyright-content {
   }
 }
 
+@media (max-width: 991px) {
+  #contact-side {
+    padding: 12.5% 0;
+  }
+}
+
 #contact-side .contact-side-container .contact-side-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2764,6 +2776,12 @@ footer #copyright .copyright-container .copyright-content {
 }
 
 @media (max-width: 576px) {
+  #contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
   #contact-side .contact-side-container .contact-side-row .contact-side-right-part #contact-side-form [class*="col"] {
     margin-top: 0;
   }
@@ -3373,6 +3391,12 @@ footer #copyright .copyright-container .copyright-content {
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  #coming .how-btn {
+    padding: 17.5px 20px;
+  }
 }
 
 #coming .how-btn::before {
