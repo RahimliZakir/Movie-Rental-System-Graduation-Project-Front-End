@@ -6,6 +6,10 @@
     padding: 20% 5% 5%;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 15% 5% 5%;
+  }
+
   .show-fragment-container {
     .show-fragment-row {
       .show-fragment-col {
@@ -32,6 +36,10 @@
             @include MediaRespond("tel") {
               height: 300px;
             }
+
+            @include MediaRespond("tablet") {
+              height: 400px;
+            }
           }
         }
       }
@@ -43,6 +51,10 @@
   padding: 5% 0;
 
   @include MediaRespond("tel") {
+    padding: 10% 0;
+  }
+
+  @include MediaRespond("tablet") {
     padding: 10% 0;
   }
 
@@ -172,6 +184,10 @@
           @include MediaRespond("tel") {
             padding: 0;
           }
+
+          @include MediaRespond("tablet") {
+            padding: 0;
+          }
         }
 
         .film-types {
@@ -234,6 +250,12 @@
               @include Flexing(center, null, column);
             }
 
+            @include MediaRespond("tablet") {
+              height: 450px;
+              padding: 10% 0;
+              @include Flexing(center, null, column);
+            }
+
             .theatre-heading {
               color: white;
               font-family: "RobotoSerif";
@@ -249,6 +271,11 @@
                 overflow: auto;
               }
 
+              @include MediaRespond("tablet") {
+                position: static;
+                overflow: auto;
+              }
+
               .theatre {
                 display: flex;
                 position: absolute;
@@ -259,6 +286,11 @@
                 @include MediaRespond("tel") {
                   position: static;
                   flex-wrap: wrap;
+                  transform: translate(0, 0);
+                }
+
+                @include MediaRespond("tablet") {
+                  position: static;
                   transform: translate(0, 0);
                 }
               }
@@ -295,6 +327,10 @@
               }
 
               .left {
+                @include MediaRespond("tablet") {
+                  padding-left: 35px;
+                }
+
                 .cinema-row {
                   transform: skew(-15deg);
                   margin: 0 6px;
@@ -381,6 +417,12 @@
                 @include MediaRespond("tel") {
                   margin-left: 0;
                   padding-left: 100px;
+                }
+
+                @include MediaRespond("tablet") {
+                  margin-left: 0;
+                  padding-left: 50px;
+                  padding-right: 35px;
                 }
 
                 .cinema-row {
@@ -551,6 +593,11 @@
           padding-right: 2.5%;
         }
 
+        @include MediaRespond("tablet") {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+
         .written-comment {
           margin-top: 2.5%;
 
@@ -565,6 +612,10 @@
 
                 @include MediaRespond("tel") {
                   width: 85%;
+                }
+
+                @include MediaRespond("tablet") {
+                  width: 100%;
                 }
 
                 img {
@@ -646,6 +697,10 @@
     padding: 15% 0;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 10% 0;
+  }
+
   .show-like-these-container {
     .show-like-these-row {
       align-items: center;
@@ -656,6 +711,10 @@
           color: white;
 
           @include MediaRespond("tel") {
+            margin: 0;
+          }
+
+          @include MediaRespond("tablet") {
             margin: 0;
           }
         }

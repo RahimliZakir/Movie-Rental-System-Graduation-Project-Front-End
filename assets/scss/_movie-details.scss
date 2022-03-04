@@ -6,6 +6,10 @@
     padding: 20% 5% 5%;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 15% 5% 5%;
+  }
+
   .movie-fragment-container {
     .movie-fragment-row {
       .movie-fragment-col {
@@ -31,6 +35,10 @@
 
             @include MediaRespond("tel") {
               height: 300px;
+            }
+
+            @include MediaRespond("tablet") {
+              height: 400px;
             }
           }
         }
@@ -176,6 +184,10 @@
           @include MediaRespond("tel") {
             padding-right: 0;
           }
+
+          @include MediaRespond("tablet") {
+            padding-right: 0;
+          }
         }
 
         .film-types {
@@ -306,6 +318,11 @@
           padding-right: 2.5%;
         }
 
+        @include MediaRespond("tablet") {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+
         .written-comment {
           margin-top: 2.5%;
 
@@ -322,11 +339,15 @@
                   width: 85%;
                 }
 
+                @include MediaRespond("tablet") {
+                  width: 100%;
+                }
+
                 img {
                   width: 100%;
                   border-radius: 50%;
                 }
-              } 
+              }
             }
 
             .written-comment-content-side {
@@ -401,6 +422,10 @@
     padding: 15% 0;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 10% 0;
+  }
+
   .more-like-these-container {
     .more-like-these-row {
       align-items: center;
@@ -409,6 +434,10 @@
           font-family: "RobotoBold";
 
           @include MediaRespond("tel") {
+            margin-bottom: 0;
+          }
+
+          @include MediaRespond("tablet") {
             margin-bottom: 0;
           }
         }

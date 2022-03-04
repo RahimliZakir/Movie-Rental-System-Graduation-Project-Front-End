@@ -7,6 +7,10 @@
     padding: 27.5% 0 12.5%;
   }
 
+  @include MediaRespond("tablet") {
+    padding: 25% 0 12.5%;
+  }
+
   .blog-description-starter-container {
     .blog-description-starter-row {
       .blog-description-starter-heading {
@@ -17,6 +21,10 @@
 
         @include MediaRespond("tel") {
           font-size: 2rem;
+        }
+
+        @include MediaRespond("tablet") {
+          font-size: 3.8rem;
         }
       }
     }
@@ -148,6 +156,17 @@
       .written-comments-col {
         padding-left: 5%;
         padding-right: 2.5%;
+
+        @include MediaRespond("tel") {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+
+        @include MediaRespond("tablet") {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+
         .written-comment {
           margin-top: 2.5%;
 
@@ -162,6 +181,10 @@
 
                 @include MediaRespond("tel") {
                   width: 85%;
+                }
+
+                @include MediaRespond("tablet") {
+                  width: 100%;
                 }
 
                 img {
