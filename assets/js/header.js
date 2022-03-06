@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
   for (let i = 0; i < menusLength; i++) {
     if (
       menus[i].children[0].href == currentLocation &&
-      collapsedMenus[i].children[0].href
+      collapsedMenus[i].children[0].href == currentLocation
     ) {
       menus[i].children[0].classList.add("active");
       collapsedMenus[i].children[0].classList.add("active");
