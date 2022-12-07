@@ -1,10 +1,7 @@
 #movies-cards-animation {
-  background-image: radial-gradient(
-      circle at top center,
-      rgba(17, 17, 17, 0) 10%,
-      rgba(17, 17, 17, 0.8) 70%
-    ),
-    url("../images/common/inner-background.jpg");
+  position: relative;
+  z-index: 0;
+  background-image: url("../images/common/inner-background.jpg");
   background-repeat: repeat-y;
   animation-name: MoveBackground;
   animation-duration: 300s;
@@ -16,7 +13,22 @@
     padding: 55% 0 30% 0;
   }
 
+  .movies-cards-animation-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: radial-gradient(
+      circle at top center,
+      rgba(17, 17, 17, 0) 10%,
+      rgba(17, 17, 17, 0.8) 70%
+    );
+  }
+
   .movies-cards-animation-container {
+    position: relative;
+    z-index: 1;
     .movies-cards-animation-row {
       .movies-cards-main-heading {
         font-family: "Baloo";
