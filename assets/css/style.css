@@ -2364,7 +2364,9 @@ footer #copyright .copyright-container .copyright-content {
 }
 
 #contactus-cards-animation {
-  background-image: radial-gradient(circle at top center, rgba(17, 17, 17, 0) 10%, rgba(17, 17, 17, 0.8) 70%), url("../images/common/inner-background.jpg");
+  position: relative;
+  z-index: 0;
+  background-image: url("../images/common/inner-background.jpg");
   background-repeat: repeat-y;
   -webkit-animation-name: MoveBackground;
           animation-name: MoveBackground;
@@ -2381,14 +2383,28 @@ footer #copyright .copyright-container .copyright-content {
     padding: 50% 0 30% 0;
   }
 }
-#contactus-cards-animation .contactus-cards-animation-container .contactus-cards-animation-row h2 {
-  font-family: "Baloo";
-  font-size: 3.2rem;
-  color: white;
+#contactus-cards-animation .contactus-cards-animation-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(circle at top center, rgba(17, 17, 17, 0) 10%, rgba(17, 17, 17, 0.8) 70%);
 }
+#contactus-cards-animation .contactus-cards-animation-container {
+  position: relative;
+  z-index: 1;
+}
+#contactus-cards-animation .contactus-cards-animation-container .contactus-cards-animation-row h2,
 #contactus-cards-animation .contactus-cards-animation-container .contactus-cards-animation-row p {
   font-family: "Baloo";
+  font-weight: 600;
   color: white;
+}
+#contactus-cards-animation .contactus-cards-animation-container .contactus-cards-animation-row h2 {
+  font-size: 3.2rem;
+}
+#contactus-cards-animation .contactus-cards-animation-container .contactus-cards-animation-row p {
   font-size: 1.1rem;
 }
 
